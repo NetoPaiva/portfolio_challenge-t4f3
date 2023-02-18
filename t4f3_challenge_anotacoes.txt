@@ -1,0 +1,235 @@
+# Portfolio
+
+## Challenge ONE / Front-end
+
+### Sprint 01 - Portfolio: do Figma ao HTML/CSS
+
+-----
+
+
+#### Anotações iniciais sobre o Challenge
+
+Alura, Challenge, front-end, ONE, portfolio
+
+  Conteúdo
+
+    Aviso no Discord
+    Página do Challenge
+    Apresentação Challenge ONE / Front-end - sprint 1
+    Links
+
+
+## Aviso no Discord
+
+  Informações/avisos-gerais - 17/02/2023
+
+Barbara dos Santos — Ontem às 10:01
+@everyone 
+
+Olá, Devs!
+
+Estamos muito impressionados com a dedicação e comprometimento que vocês estão demonstrando em fazer os cursos. Como recompensa pelo comprometimento de vocês, resolvemos adiantar o primeiro challenge para que todo mundo possa ter mais tempo para se organizar e executá-lo.
+O objetivo desse challenge é criar um portfólio onde você possa exibir todos os projetos nos quais está trabalhando, mostrar a sua experiência e contar um pouquinho sobre quem você é. Assim, você terá uma ótima ferramenta para fazer o seu marketing pessoal, além de exercitar ainda mais os seus conhecimentos de HTML, CSS e Javascript.
+
+Bora começar a construir o seu portfólio? É só clicar no link abaixo.
+
+https://www.alura.com.br/challenges/oracle-one-front-end/portfolio
+
+Aproveite os nossos canais para pedir aquela ajuda  https://discord.gg/5gfrqXxFX5  ou mostrar os seus resultados https://discord.gg/GYRYVUDFny
+
+Bons estudos! (editado)
+VOCÊ FOI CONVIDADO(A) A ENTRAR EM UM SERVIDOR
+ONE BR - Front End
+112 online
+1.236 Membros / Entrou
+
+VOCÊ FOI CONVIDADO(A) A ENTRAR EM UM SERVIDOR
+ONE BR - Front End
+112 online
+1.236 Membros / Entrou
+
+
+------
+
+
+## Página do Challenge
+
+
+#### Edição 4 - Challenge ONE / Front-end
+
+### Portfolio com HTML/CSS/JS
+
+#### Oracle / Alura
+
+  - Com base no Challenge Based Learning
+    - 3 pilares da aprendizagem baseada em desafios (Apple)
+      - Engajar (Trello/Discord)
+        - rotina de desenvolvimento
+        - comunicação
+      - Investigar (cursos/pesquisas)
+        - material de estudos
+        - busca de soluções
+        - guia de conteúdo
+      - Agir (GitHub/LinkedIn)
+        - desenvolver
+        - monitorar
+        - compartilhar
+
+  - Etapa do Challenge
+    - sprint 1
+      - implementar projeto
+      - ferramentas
+        - HTML semântico / acessível
+        - CSS flex / responsivo
+        - JS funcional
+
+  - Instrutores
+    - Ellen Prado Pimentel
+      - dev / instrutora Front-end (Alura)
+      - https://www.linkedin.com/in/ellen-p-pimentel/
+    - Wesley Bastos
+      - dev / instrutor Front-end (Alura)
+      - https://www.linkedin.com/in/wessbastos/
+      - https://www.instagram.com/wessbastos/
+
+
+------
+
+
+## Challenge ONE / Front-end - sprint 1
+
+
+### Sprint 01 - Portfolio: do Figma ao HTML e CSS
+
+  - Vídeo de apresentação
+  - Comunidade no Discord
+  - Quadro no Trello
+
+
+### Detalhes do desafio
+
+1. Conteúdos importantes (links abaixo)
+
+  - Modelo Figma
+    - design das telas/dispositivos
+  - Trello - Sprint 01 - Portfolio
+    - instruções / roteiro do projeto
+  - Discord
+    - comunidade dev ONE
+  - 4. Alura+
+    - como front-end utiliza o Figma
+    - vídeo / instruções
+
+
+2. Cards do Trello
+
+  - Ferramenta de gestão de desenvolvimento do projeto
+  - Seguir o quadro original Challenge ONE / Alura
+  - copiar o quadro para gerenciar andamento do projeto
+
+
+3. Sugestão Implementação / Cursos / Formações
+
+  - HTML / CSS / HTML
+
+    - Flexbox
+    - Responsividade
+    - Arquitetura CSS
+    - Acessibilidade
+    - Validação formulário
+
+
+4. Início do projeto
+
+  - Baixar projeto base  no repositório do GitHub Alura
+    - index.html [finalizado]
+    - style.css [instruções/sugestões de estilo]
+    - validacao.js [em branco]
+      - aplicar lógica de programação
+      - validação do formulário
+
+
+5. Entrega do projeto
+
+  - Publicar repositório / página no GitHub
+    - como publicar com GitHub Pages
+
+  - Adicionar repositório no tópico "#challengeoneportfolio4"
+    - perfil do GitHub
+    - menu lateral direito do repositório
+    - aba Sobre / About
+    - na engrenagem
+    - preencher o campo "Tópico / Topics"
+      "challengeoneportfolio4"
+    - salvar alterações
+
+  - Entrega final
+    - preencher formulário com dados / link
+      - repositório GitHub
+      - publicação GitHub Pages
+    - receber badge da conquista por email
+    - compartilhar projeto
+      "#Oracle #AluraLatam"
+
+
+------
+
+
+## Links
+
+
+- Aviso no Discord
+https://discord.com/channels/1057013085073850388/1057013085795274826/1076126358029205524
+
+
+- Página do Challenge
+https://www.alura.com.br/challenges/oracle-one-front-end/portfolio
+
+
+- Começar desafio
+https://www.alura.com.br/challenges/oracle-one-front-end/portfolio/portfolio
+
+
+- Vídeo de apresentação
+https://youtu.be/N-UexWG3B4o
+
+
+- Figma
+https://www.figma.com/file/Mv4mSxBHzB5caI7bW2tLv6/Challenge-Front-end-Portf%C3%B3lio
+
+
+- Trello
+https://trello.com/b/Uj7PScGE/sprint-1
+
+
+- Discord
+https://discord.gg/6QyDXYfvdw
+
+
+- Alura+ - Utilizar Figma
+https://cursos.alura.com.br/como-front-end-utiliza-o-figma-c858
+
+
+- Repositório do meu projeto Portfolio
+https://github.com/NetoPaiva/portfolio_challenge-t4f3.git
+
+
+- Instruções de publicação da página
+https://docs.github.com/pt/pages/getting-started-with-github-pages/creating-a-github-pages-site
+
+
+- Repositório base Alura
+https://github.com/alura-challenges/challenge-one-portfolio-br.git
+
+
+- formulário de entrega
+https://lp.alura.com.br/alura-latam-entrega-challenge-one-portugues
+
+
+- linkedIn Alura
+https://www.linkedin.com/company/alura-latam/mycompany/
+
+
+
+
+/* --- fim ;)
