@@ -1,0 +1,121 @@
+Anotações vídeo de apresentação
+
+https://www.alura.com.br/challenges/oracle-one-front-end/portfolio/portfolio
+
+Alura, Challenge, front-end, ONE, portfolio, video
+
+
+# Apresentação Challenge Portfolio
+
+
+  Christian Velasco
+    - Head Alura Latam
+
+  Wesley Bastos
+    - dev / instrutor Alura Latam
+
+  Ellen Pimentel
+    - dev / instrutora Alura Latam
+    
+  
+  - Programa ONE
+    - parceria Oracle / Alura
+    - Educação / Conexão
+      - capacitar / adquirir conhecimento
+      - criar rede
+        - alunos
+        - empresas
+
+
+## Desafio Portfolio Front-end
+
+### Foco principal
+    - Trabalhar responsividade / CSS
+
+  - por em prática conhecimentos adquiridos na especialização
+    - HTML / CSS / JS
+  - divulgar
+    - projetos realizados
+    - formação
+    - perfil
+  - integrar com GitHub
+
+
+### Modelo no Figma
+
+  - rotina de desenvolvimento
+    - equipe design
+      - cria layout
+      - entrega para dev front-end
+    - dev  front-end
+      - recebe layout criado
+      - transforma layout em código HTML / CSS /JS
+
+    - Wesley:
+      "por experiência própria, fazer layouts com alta fidelidade no Figma é uma habilidade que muitas empresas requerem dos seus desenvolvedores de front-end, então é muito importante que vocês se atentem às ferramentas do Figma, como por exemplo, se vocês checaram os espaçamentos, checaram as fontes, os tamanhos... é muito importante que vocês trabalhem com isso e vão se familiarizando com a utilização dessa ferramenta também."
+
+  - layouts responsivos
+
+    - Challenge desenvolvido por designers da experiência do usuário
+      - seguir modelo
+      
+    - seções
+      - menu bar
+      - banner
+      - sobre
+      - skills (conhecimentos)
+      - hobbies
+      - formação acadêmica (as mais importantes)
+      - experiência profissional (projetos da trilha)
+      - contato (formulário)
+      - rodapé (créditos)
+
+  - Responsividade
+    - CSS a ferramenta mais importante deste desafio
+      
+  - Layout de referência
+    - pode seguir / alterar layout
+    - fazer cópia do arquivo do Figma
+
+      
+### Roteiro no Trello
+
+  - acompanhar / facilitar desenvolvimento do projeto
+
+  - coluna ferramentas
+    - requisitos necessários para desafio
+      - elementos HTML (seções da aplicação)
+      - informações / saber mais / extra
+
+  - coluna backlog
+    - etapas do desenvolvimento
+      - HTML / CSS
+      - JS (validação)
+
+
+### Desenvolvimento
+  - quebrar problema em problemas menores (etapas)
+  - realizar cada etapa
+  - seguir passo a passo detalhado no Trello
+
+
+### Repositório base no GitHub
+  - todas informações do Challenge
+    - arquivos principais padronizados (HTML)
+    - CSS com dicas / instruções
+    - JS para fazer a validação
+    - imagens
+    - readme
+      - apresentação geral do projeto
+      - primeiros passos
+      - instruções
+      - descrição
+
+]
+### Finalização
+  - publicação do Portfolio
+  - formulário de entrega
+
+
+
+/* --- fim ;)
