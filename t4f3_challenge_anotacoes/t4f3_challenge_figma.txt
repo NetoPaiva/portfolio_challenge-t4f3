@@ -1,0 +1,210 @@
+Anotações Figma - propostas de layout
+
+https://www.figma.com/file/Mv4mSxBHzB5caI7bW2tLv6/Challenge-Front-end-Portf%C3%B3lio?node-id=0%3A1&t=Sr6LGi9Nt7VoXHbq-0
+
+Alura, challenge, design, Figma, front-end, ONE, portfolio
+
+
+# Layout Figma
+
+  o mantra dev front-end
+    - analisar layout
+    - desmembrar elementos
+    - identificar elementos com mesmo estilo
+    - montar / reaproveitar código
+
+
+
+## Analisar layout
+
+
+### Estrutura básica dos Layouts
+
+  - Grid (colunas)
+    - 1 coluna = 80px
+    - entre colunas (gutter) = 16px
+
+  - Mobile
+    - 4 colunas (w: 360px)
+    - margens: 16px
+
+  - Tablete
+    - 8 colunas (w: 768px)
+    - margem esquerda/direita: 32px
+
+  - Desktop
+    - 12 colunas (w: 1440px)
+    - margem esquerda/direita: auto
+
+
+## Desmembrar elementos
+
+  - capturar telas dos elementos (OK)
+
+
+### Header elementos
+
+  - versão mobile
+    - nome (logo)
+    - menu navegação
+      - email (normal)
+
+  - versão tablete
+    - nome (logo)
+    - menu navegação
+      - email (bold)
+
+  - versão desktop
+    - nome (logo)
+    - menu navegação
+      - sobre mim
+      - skills
+      - hobbies
+      - formação
+      - projetos
+      - email (bold)
+
+
+### Banner (apresentação)
+
+  - versão mobile
+    - alinhado à esquerda
+      - imagem de perfil (1,5 coluna)
+    - alinhado à esquerda (largura total = 4 colunas)
+      - título de apresentação
+      - texto com breve descrição pessoal
+        - nome
+        - idade
+        - nacionalidade
+        - biografia (+/- 50 caracteres)
+      - linha com redes sociais
+
+  - versão tablete
+    - alinhado à esquerda (6 colunas)
+      - título de apresentação
+      - texto com breve descrição pessoal
+        - nome
+        - idade
+        - nacionalidade
+        - biografia (+/- 50 caracteres)
+      - linha com redes sociais
+    - alinhada à direita
+      - imagem de perfil (2 colunas)
+
+  - versão desktop
+    - alinhado à esquerda (8 colunas)
+      - título de apresentação
+      - texto com breve descrição pessoal
+        - nome
+        - idade
+        - nacionalidade
+        - biografia (+/- 50 caracteres)
+      - linha com redes sociais
+    - alinhada à direita
+      - imagem de perfil (4 colunas)
+
+
+### Sobre mim
+
+  - versão mobile / tablete
+    - alinhados à esquerda
+    - largura total
+      - título
+      - texto (biografia)
+      - Assinatura
+
+  - versão desktop
+    - alinhados à esquerda
+    - largura 8 colunas
+      - título
+      - texto (biografia)
+      - Assinatura
+
+
+### Skills / Hobbies (HTML/CSS)
+
+  - versão mobile
+    - largura total 
+    - títulos centralizados
+    - habilidades / atividades à esquerda
+      - wrap (quebrar linha)
+        - 2 ícones por linha
+
+  - versão tablete / desktop
+    - largura total 
+    - títulos centralizados
+    - habilidades / atividades à esquerda
+      - 1 linha (versão desktop)
+      - wrap (quebrar linha versão tablete)
+        - 3 ícones por linha
+
+
+### Formação acadêmica
+
+  - versão mobile
+    - largura total
+    - título centralizado
+    - logos centralizados
+    - texto alinhado à esquerda
+
+  - versão tablete / desktop
+    - largura total
+    - título centralizado
+    - logos distribuídos em 1 linha
+    - textos
+      - embaixo dos logos
+      - alinhados à esquerda
+
+
+### Experiência profissional
+
+  - versão mobile / tablete
+    - título centralizado
+    - imagem do projeto (largura total)
+    - texto / botões
+      - à esquerda
+      - embaixo da imagem
+
+  - versão desktop
+    - titulo centralizado
+    - posicionamentos intercalados
+      - primeiro projeto à esquerda
+      - segundo à direita
+    - imagem do projeto (8 colunas)
+    - texto / botões (4 colunas)
+
+
+### Contato
+
+  - versão mobile
+    - margem interna
+    - título / texto alinhados à esquerda
+    - formulário largura total
+    - botão enviar à esquerda
+
+  - versão tablete
+    - largura total
+    - título / texto alinhados à esquerda
+    - formulário largura total
+    - botão à esquerda
+
+  - versão desktop
+    - largura total
+    - imagem
+      - à esquerda
+      - 5 colunas
+      - altura total
+    - título / texto à esquerda (7 colunas)
+    - formulário (largura de 7 colunas)
+    - botão à esquerda (7 colunas)
+
+
+### Rodapé
+
+  - versão mobile / tablete / desktop
+    - largura total
+    - texto centralizado
+    - 2 linhas
+
+
+/* --- fim ;)

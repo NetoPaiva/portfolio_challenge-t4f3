@@ -1,0 +1,65 @@
+### Challenge ONE - Portfolio
+
+
+# Funcionalidades do projeto
+
+
+- validação do formulário
+
+  - campos de texto (input / textarea)
+  - campo de email
+  - campos com preenchimentos obrigatórios
+  - limites mínimos/máximos de caracteres
+  - exibir mensagens específicas de erros
+  - botão enviar ativo só com campos preenchidos
+  - estilo específico para cada estado dos campos / botão
+
+  
+- visualização do currículo
+
+  - formato PDF
+  - abrir em nova aba
+
+
+- adaptação do layout
+
+  - menu de navegação
+    - só email (mobile / tablete)
+    - completo (versão desktop)
+
+  - banner (aside)
+    - alinhamento diferente da foto (mobile)
+
+  - formulário contato
+    - exibir imagem ilustrativa (desktop)
+    - margens laterais (mobile)
+
+  - campos do formulário de contato
+    - em branco
+      - placeholder tonalidade clara
+      - borda inferior tonalidade clara
+    - ativo
+      - placelabel cor azul
+      - texto digitado tonalidade escura
+      - cursor cor azul
+      - borda inferior cor azul
+    - preenchido
+      - placelabel tonalidade clara
+      - texto digitado tonalidade escura
+      - borda inferior tonalidade clara
+
+  - botão
+    - ativo
+      - fundo azul
+      - texto branco
+    - inativo
+      - fundo azul claro
+      - texto azul claro
+      - borda azul
+    - acionado
+      - fundo branco
+      - texto azul
+      - borda azul
+
+
+/* --- fim ;)

@@ -1,0 +1,2221 @@
+Anotações Figma - propostas de layout
+
+https://www.figma.com/file/Mv4mSxBHzB5caI7bW2tLv6/Challenge-Front-end-Portf%C3%B3lio?node-id=0%3A1&t=Sr6LGi9Nt7VoXHbq-0
+
+Alura, challenge, design, Figma, front-end, ONE, portfolio
+
+
+# Layout Figma (CSS)
+
+  o mantra dev front-end
+    - analisar layout
+    - desmembrar elementos
+    - identificar elementos com mesmo estilo
+    - montar / reaproveitar código
+
+----
+----
+
+## Body
+
+- comum a todas as telas
+
+  Font family: Raleway 700, 600, 500, 400
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+- mobile
+
+  position: absolute;
+  width: 360px;
+  height: 4475px;
+  left: 0px;
+  top: 0px;
+  border-radius: 0px;
+
+- tablete
+
+  width: 768px;
+  height: 4379px;
+
+- desktop
+
+  gap: 32px;
+
+  width: 1440px;
+  height: 4796px;
+
+----
+----
+
+## Header
+
+### header container
+
+- mobile
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+
+  width: 360px (4 colunas);
+  height: 56px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+- tablete
+
+  padding: 16px 32px;
+
+  width: 768px (8 colunas);
+  height: 56px;
+
+- desktop
+
+  padding: 32px 0px;
+  gap: 611px;
+
+  width: 1136px (12 colunas);
+  height: 88px;
+
+----
+
+### header logo/nome container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+
+  width: 134px;
+  height: 24px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+----
+
+#### header logo imagem 
+
+- mobile / tablete / desktop
+
+  width: 24px;
+  height: 24px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+----
+
+#### header logo texto nome
+
+- mobile / tablete / desktop
+
+  width: 102px;
+  height: 19px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* Preto/100% */
+  color: #464646;
+
+  background: #464646;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+----
+
+### header menu nav
+
+- mobile (apenas email)
+
+  width: 133px;
+  height: 16px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Preto/100% */
+    color: #464646;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+- tablete (apenas email)
+
+  width: 159px;
+  height: 19px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+- desktop
+
+  /* nav container */
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    width: 642px;
+    height: 19px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+
+  /* texto seções */
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    
+    order: 0; (cada item em uma ordem, do 0 ao 5)
+
+  /* texto email */
+  
+    font-weight: 700;
+    order: 5;
+
+----
+----
+
+## banner (aside)
+
+### banner container
+
+- mobile
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 16px;
+
+  width: 360px;
+  height: 294px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+- tablete
+
+  flex-direction: row;
+  align-items: center;
+  padding: 32px;
+  gap: 32px;
+
+  width: 768px;
+  height: 210px;
+
+- desktop
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 208px;
+
+  width: 1136px;
+  height: 368px;
+
+----
+
+### banner foto
+
+- mobile
+
+  border-radius: 50%;
+
+  width: 98px;
+  height: 98px;
+
+  background: url(.jpg);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+- tablete
+
+  width: 146px;
+  height: 146px;
+
+  order: 1;
+
+- desktop
+
+  width: 368px;
+  height: 368px;
+
+----
+
+### banner descrição container
+
+- mobile
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 328px;
+  height: 148px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+- tablete
+
+  gap: 8px;
+
+  width: 524px;
+  height: 130px;
+
+  order: 0;
+
+- desktop
+
+  gap: 24px;
+
+  width: 751px;
+  height: 246px;
+
+----
+
+### banner título
+
+- mobile
+
+  width: 328px; (4 colunas)
+  height: 52px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+- tablete
+
+  width: 524px; (6 colunas)
+
+- desktop
+
+  width: 751px; (8 colunas)
+  height: 122px;
+  
+  font-size: 52px;
+  line-height: 61px;
+
+----
+
+### banner texto
+
+- mobile
+
+  width: 328px; (4 colunas)
+  height: 48px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+- tablete
+
+  width: 524px; (6 colunas)
+
+  font-size: 16px;
+  line-height: 19px;
+
+- desktop
+
+  width: 751px; (8 colunas)
+
+  font-size: 22px;
+  line-height: 26px;
+
+----
+
+### banner redes sociais container
+
+- mobile
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 318px;
+  height: 16px;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+- tablete / desktop
+
+  gap: 32px;
+
+  width: 467px;
+  height: 24px;
+
+----
+
+### banner redes sociais texto
+
+- mobile
+
+  width: 45px;
+  height: 16px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+- tablete / desktop
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+----
+
+### banner redes sociais ícones
+
+- mobile
+
+  width: 16px;
+  height: 16px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+- tablete / desktop
+
+  width: 24px;
+  height: 24px;
+
+----
+----
+
+## Sobre container
+
+- mobile
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+
+  width: 360px;
+  height: 350px;
+
+  /* Azul/10% */
+  background: #EAF2FD;
+
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+
+- tablete
+
+  padding: 32px;
+  gap: 10px;
+
+  width: 768px;
+  height: 286px;
+
+- desktop
+
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 1136px;
+  height: 255px;
+
+----
+
+### sobre container interno
+
+- mobile
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 328px;
+  height: 318px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+- tablete
+
+  width: 704px;
+  height: 222px;
+
+- desktop
+
+  não tem esta div
+
+----
+
+### sobre título
+
+- mobile / tablete
+
+  width: 114px;
+  height: 26px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+- desktop
+
+  font-size: 32px;
+  line-height: 38px;
+
+----
+
+### sobre texto
+
+- mobile / tablete
+
+  width: 328px;
+  height: 208px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+- desktop
+
+  font-size: 16px;
+  line-height: 19px;
+
+----
+
+### sobre assinatura
+
+- mobile / tablete / desktop
+
+  width: 140px;
+  height: 52px;
+
+  background: url(image.png);
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+----
+----
+
+## Skills container
+
+- mobile
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 32px;
+
+  width: 360px;
+  height: 508px;
+
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+
+- tablete
+
+  padding: 32px;
+  gap: 32px;
+
+  width: 768px;
+  height: 390px;
+
+- desktop
+
+  padding: 0px;
+  gap: 88px;
+
+  width: 1440px;
+  height: 1245px;
+
+----
+
+### skills ícones-container
+
+- mobile
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 8px;
+
+  width: 156px;
+  height: 118px;
+
+  /* Preto/branco */
+  background: #FFFFFF;
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+- tablete
+
+  width: 224px;
+  height: 118px;
+
+- desktop
+
+  width: 176px;
+  height: 174px;
+
+----
+
+### skills ícones
+
+- mobile / tablete / desktop
+
+  width: 24px;
+  height: 37px;
+
+  font-family: 'Font Awesome 5 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #2A7AE4;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+----
+
+### skills texto
+
+- mobile / tablete / desktop
+
+  width: 124px;
+  height: 19px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+----
+
+## Hobbies container
+
+- mobile
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  gap: 32px;
+
+  width: 360px;
+  height: 508px;
+
+  flex: none;
+  order: 4;
+  align-self: stretch;
+  flex-grow: 0;
+
+- tablete
+
+  padding: 32px;
+  gap: 32px;
+
+  width: 768px;
+  height: 390px;
+
+- desktop
+
+  width: 1136px;
+  height: 244px;
+
+----
+
+### hobbies titulo
+
+- mobile / tablete
+
+  width: 88px;
+  height: 26px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+
+  /* identical to box height */
+  text-align: center;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+- desktop
+
+  width: 127px;
+  height: 38px;
+
+  font-size: 32px;
+  line-height: 38px;
+
+----
+
+### hobbies ícones container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 8px;
+
+  width: 156px;
+  height: 118px;
+
+  /* Preto/branco */
+  background: #FFFFFF;
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+----
+
+### hobbies ícones
+
+- mobile / tablete / desktop
+
+  width: 32px;
+  height: 32px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+----
+
+### hobbies texto
+
+- mobile / tablete / desktop
+
+  width: 124px;
+  height: 19px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+----
+
+## Formação acadêmica container
+
+- mobile
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  gap: 32px;
+
+  width: 360px;
+  height: 661px;
+
+  /* Azul/10% */
+  background: #EAF2FD;
+
+  flex: none;
+  order: 5;
+  align-self: stretch;
+  flex-grow: 0;
+
+- tablete
+
+  width: 768px;
+  height: 291px;
+
+- desktop
+
+  padding: 82px;
+
+  width: 1440px;
+  height: 581px;
+
+----
+
+### formação titulo
+
+- mobile / tablete
+
+  width: 227px;
+  height: 26px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+
+  /* identical to box height */
+  text-align: center;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+- desktop
+
+  font-size: 32px;
+  line-height: 38px;
+
+----
+
+### formação cursos container
+
+- mobile
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 296px;
+  height: 539px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+- tablete / desktop
+
+  flex-direction: row;
+
+----
+
+### formação container logo/ textos
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 296px;
+  height: 169px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+### formação logo container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  gap: 10px;
+
+  width: 296px;
+  height: 118px;
+
+  /* Preto/branco */
+  background: #FFFFFF;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+### formação logo imagem
+
+- mobile / tablete
+
+  width: 84px;
+  height: 58px;
+
+  background: url(image.png);
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+- desktop
+
+  width: 192px;
+  height: 130px;
+
+----
+
+### formação subtitulo
+
+- mobile / tablete
+
+  width: 132px;
+  height: 19px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* identical to box height */
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+- desktop
+
+  font-size: 22px;
+  line-height: 26px;
+
+----
+
+### formação texto
+
+- mobile / tablete
+
+  width: 81px;
+  height: 16px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+- desktop
+
+  font-size: 16px;
+  line-height: 19px;
+
+----
+----
+
+## experiência container
+
+- mobile / tablete
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  gap: 16px;
+
+  width: 360px;
+  height: 1321px;
+
+  flex: none;
+  order: 6;
+  align-self: stretch;
+  flex-grow: 0;
+
+- desktop
+
+  padding: 0px;
+  gap: 32px;
+
+  width: 1136px;
+  height: 1886px;
+
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+
+----
+
+### experiência titulo
+
+- mobile / tablete
+
+  width: 250px;
+  height: 26px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+
+  /* identical to box height */
+  text-align: center;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+- desktop
+
+  font-size: 32px;
+  line-height: 38px;
+
+----
+
+### experiência container interno
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 64px;
+
+  width: 296px;
+  height: 1215px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+### experiência container individual
+
+- mobile / tablete
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  width: 296px;
+  height: 251px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+- desktop
+
+  flex-direction: row;
+
+----
+
+### experiência imagem
+
+- mobile / tablete
+
+  width: 296px;
+  height: 144px;
+
+  background: url(encriptador-figma.png);
+  border-radius: 0px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+- desktop
+
+  width: 752px;
+  height: 406px;
+
+  background: url(encriptador-figma.png);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 0px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+----
+
+### experiência container textos e botões
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 296px;
+  height: 91px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+### experiência subtitulo
+
+- mobile / tablete
+
+  width: 296px;
+  height: 19px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+- desktop
+
+  font-size: 22px;
+  line-height: 26px;
+
+----
+
+### experiência texto
+
+- mobile / tablete
+
+  width: 296px;
+  height: 16px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+- desktop
+
+  font-size: 16px;
+  line-height: 19px;
+
+----
+
+### experiência botão container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 296px;
+  height: 40px;
+
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+### experiência botão1
+
+- mobile / tablete
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 10px;
+
+  width: 108px;
+  height: 40px;
+
+  /* Azul/100% */
+  border: 1px solid #2A7AE4;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+- desktop
+
+  padding: 16px;
+
+----
+
+### experiência botão1 texto
+
+- mobile / tablete
+
+  width: 76px;
+  height: 16px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Azul/100% */
+  color: #2A7AE4;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+- desktop
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+----
+
+### experiência botão2
+
+- mobile / tablete
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 10px;
+
+  width: 96px;
+  height: 40px;
+
+  /* Azul/100% */
+  background: #2A7AE4;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+- desktop
+
+  padding: 16px;
+
+----
+
+### experiência botão2 texto
+
+- mobile / tablete
+
+  width: 64px;
+  height: 16px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Preto/branco */
+  color: #FFFFFF;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+- desktop
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+----
+----
+
+## Contato container
+
+- mobile / tablete
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px;
+  gap: 10px;
+
+  width: 360px;
+  height: 675px;
+
+  /* Azul/10% */
+  background: #EAF2FD;
+
+  flex: none;
+  order: 7;
+  align-self: stretch;
+  flex-grow: 0;
+
+- desktop
+
+  padding: 64px;
+
+----
+
+### Contato container interno
+
+- mobile / tablete
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  width: 296px;
+  height: 611px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+- desktop
+
+  flex-direction: row;
+  align-items: center;
+  padding: 64px 0px 0px;
+  gap: 16px;
+
+  width: 1136px;
+  height: 660px;
+
+- desktop (imagem)
+
+  width: 464px;
+  height: 593px;
+
+  background: url(.jpg), #EDEDED;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+----
+
+### Contato texto container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 296px;
+  height: 110px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+### contato texto titulo
+
+- mobile / tablete
+
+  width: 85px;
+  height: 26px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+
+  /* identical to box height */
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+- desktop
+
+  font-size: 32px;
+  line-height: 38px;
+
+----
+
+### contato texto texto
+
+- mobile / tablete / desktop
+
+  width: 296px;
+  height: 76px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #464646;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+----
+
+### contato form container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  width: 296px;
+  height: 397px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+### contato input container em branco
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 296px;
+  height: 56px;
+
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+#### contato input em branco caixa (campo)
+
+- mobile / tablete / desktop
+
+  width: 296px;
+  height: 56px;
+
+  background: #FFFFFF;
+  border-radius: 4px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+#### contato input em branco linha (border-bottom caixa)
+
+- mobile / tablete / desktop
+
+  position: absolute;
+  height: 1px;
+  left: 0%;
+  right: 0%;
+  top: 55px;
+
+  /* Preto/30% */
+  background: #C8C8C8;
+
+----
+
+#### contato input em branco elementos container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 12px;
+
+  position: absolute;
+  height: 24px;
+  left: 0%;
+  right: 0%;
+  top: 16px;
+
+----
+
+#### contato input em branco placelabel (texto)
+
+- mobile / tablete / desktop
+
+  width: 304px;
+  height: 24px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* or 125% */
+  display: flex;
+  align-items: center;
+
+  /* Preto/50% */
+  color: #A2A2A2;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+### contato input container preenchido
+
+- mobile /tablete / desktop
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 296px;
+  height: 56px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+#### contato input preenchido caixa (campo)
+
+- mobile / tablete / desktop
+
+  width: 296px;
+  height: 56px;
+
+  /* Preto/branco */
+  background: #FFFFFF;
+  border-radius: 4px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+#### contato input preenchido linha (border-bottom caixa)
+
+- mobile / tablete / desktop
+
+  position: absolute;
+  height: 1px;
+  left: 0%;
+  right: 0%;
+  top: 55px;
+
+  /* Preto/30% */
+  background: #C8C8C8;
+
+----
+
+#### contato input preenchido elementos container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 12px;
+
+  position: absolute;
+  height: 40px;
+  left: 0%;
+  right: 0%;
+  top: 8px;
+
+----
+
+#### contato input preenchido textos container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  width: 272px;
+  height: 40px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+----
+
+#### contato input preenchido placelabel (texto)
+
+- mobile / tablete / desktop
+
+  width: 272px;
+  height: 16px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  /* identical to box height, or 133% */
+  display: flex;
+  align-items: center;
+
+  /* Preto/50% */
+  color: #A2A2A2;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+#### contato input preenchido placeholder (container)
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+
+  width: 272px;
+  height: 20px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+#### contato input preenchido placeholder (texto)
+
+- mobile / tablete / desktop
+
+  width: 98px;
+  height: 20px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* identical to box height, or 125% */
+  display: flex;
+  align-items: center;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+----
+
+#### contato input preenchido placeholder cursor
+
+- mobile / tablete / desktop
+
+  width: 1px;
+  height: 20px;
+
+  /* Preto/30% */
+  background: #C8C8C8;
+  opacity: 0;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+----
+
+### contato input container ativo (preenchendo)
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 296px;
+  height: 56px;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+#### contato input ativo caixa (campo)
+
+- mobile / tablete / desktop
+
+  width: 296px;
+  height: 56px;
+
+  background: #FFFFFF;
+  border-radius: 4px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+#### contato input ativo linha (border-bottom caixa)
+
+- mobile / tablete / desktop
+
+  position: absolute;
+  height: 2px;
+  left: 0%;
+  right: 0%;
+  top: 54px;
+
+  /* Azul/100% */
+  background: #2A7AE4;
+
+----
+
+#### contato input ativo elementos container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 12px;
+
+  position: absolute;
+  height: 40px;
+  left: 0%;
+  right: 0%;
+  top: 8px;
+
+----
+
+#### contato input ativo textos container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  width: 272px;
+  height: 40px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+
+----
+
+#### contato input ativo placelabel (texto)
+
+- mobile / tablete / desktop
+
+  width: 272px;
+  height: 16px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  /* identical to box height, or 133% */
+  display: flex;
+  align-items: center;
+
+  /* Azul/100% */
+  color: #2A7AE4;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+#### contato input ativo placeholder (container)
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+
+  width: 134px;
+  height: 20px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+----
+
+#### contato input ativo placeholder (texto)
+
+- mobile / tablete / desktop
+
+  width: 131px;
+  height: 20px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* identical to box height, or 125% */
+  display: flex;
+  align-items: center;
+
+  /* Preto/100% */
+  color: #464646;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+----
+
+#### contato input ativo placeholder cursor
+
+- mobile / tablete / desktop
+
+  width: 1px;
+  height: 20px;
+
+  /* Azul/100% */
+  background: #2A7AE4;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+----
+
+### contato input container textarea em branco
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  width: 296px;
+  height: 133px;
+
+  flex: none;
+  order: 3;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+#### contato input textarea em branco caixa (campo)
+
+- mobile / tablete / desktop
+
+  width: 296px;
+  height: 133px;
+
+  /* Preto/branco */
+  background: #FFFFFF;
+  border-radius: 4px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+#### contato input textarea em branco linha (border-bottom caixa)
+
+- mobile / tablete / desktop
+
+  position: absolute;
+  height: 1px;
+  left: 0%;
+  right: 0%;
+  bottom: 0px;
+
+  /* Preto/30% */
+  background: #C8C8C8;
+
+----
+
+#### contato input textarea em branco elementos container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 12px;
+
+  position: absolute;
+  height: 24px;
+  left: 0%;
+  right: 0%;
+  top: 16px;
+
+----
+
+#### contato input textarea em branco placelabel (texto)
+
+- mobile / tablete / desktop
+
+  width: 304px;
+  height: 24px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* or 125% */
+  display: flex;
+  align-items: center;
+
+  /* Preto/50% */
+  color: #A2A2A2;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+### contato input botão container
+
+- mobile / tablete
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 10px;
+
+  width: 151px;
+  height: 40px;
+
+  /* Azul/100% */
+  background: #2A7AE4;
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+- desktop
+
+  padding: 16px;
+
+----
+
+#### contato input botão texto
+
+- mobile / tablete
+
+  width: 119px;
+  height: 16px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* Preto/branco */
+  color: #FFFFFF;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+- desktop
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+----
+----
+
+## Rodapé container
+
+- mobile / tablete / desktop
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  gap: 10px;
+
+  width: 360px;
+  height: 102px;
+
+  background: #FFFFFF;
+
+  flex: none;
+  order: 8;
+  align-self: stretch;
+  flex-grow: 0;
+
+----
+
+#### rodapé texto
+
+- mobile / tablete / desktop
+
+  width: 234px;
+  height: 38px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #464646;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+----
+----
+
+/* --- fim ;)

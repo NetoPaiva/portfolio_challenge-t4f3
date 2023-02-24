@@ -1,0 +1,66 @@
+### Challenge ONE - Portfolio
+
+
+# Memorial descritivo do projeto
+
+
+### Anotações do processo de desenvolvimento do projeto
+
+
+
+## Conceitos adotados
+
+- Estrutura e estilização
+
+  - mobile first
+  - responsividade
+  - semântico
+  - acessibilidade
+  - metodologia BEM
+  - atomic design
+  - sintaxe Emmet
+
+
+## Processo de desenvolvimento
+
+- criação do repositório
+
+  - registro
+  - versionamento
+
+- anotações básicas
+
+  - vídeo de apresentação
+  - cards Trello
+  - layout Figma
+  - projeto base inicial
+  - estrutura html
+  - funcionalidades
+
+- pesquisas
+
+  - ...
+
+- desenvolvimento
+
+  - IDE: VS Code / Linux (Mint-21 Cinnamon)
+
+  - index.html
+    - criar estrutura em etapas
+    - a cada seção
+    
+  - css
+    - criar estilos em etapas
+    - a cada seção
+    - arquivos individualizados (atomic design)
+    
+  - js
+    - manter estrutura Challenge Decodificador
+      - funções auxiliares
+      - redução / maximização / reaproveitamento código
+    - adicionar estrutura de módulos
+
+
+
+
+/* --- fim ;)

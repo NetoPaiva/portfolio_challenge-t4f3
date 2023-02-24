@@ -1,0 +1,367 @@
+https://trello.com/b/Uj7PScGE/sprint-1
+
+### Quadro Trello
+
+# Portfolio
+
+## Challenge ONE - Front-end - Sprint 1
+
+Alura, challenge, dev web, front-end, ONE, t4f3, trello
+
+
+### Colunas
+
+  - Ferramentas
+  
+    - Sobre desafio
+    - Para saber mais
+    - Código base do projeto
+    - Extra: animações
+    - Publique sua página
+  
+  - Backlog
+  
+    - Primeiros passos
+      - Modelo Figma
+      - Elementos principais da página
+      - Criar repositório do projeto GitHub
+      
+    - Criar seções (HTML / CSS)
+      - Menu principal
+      - Apresentação
+      - Sobre
+      - Skills / Hobbies
+      - Formações / Cursos
+      - Experiência programação
+      - Formulário contato
+      
+    - Criar Validações JS (formulário contato)
+      - Nome
+      - Email
+      - Assunto
+      - Mensagem
+      - Enviar
+  
+  - Em desenvolvimento
+  - Pausado
+  - Concluído
+
+
+
+### Cards das colunas
+
+
+#### Ferramentas / Sobre desafio
+
+  - Construção Portfolio
+  - divulgar projetos
+
+  - Requisitos (projeto deve ter)
+    - menu de navegação
+    - banner com imagem
+    - sobre
+      - foto de perfil
+      - link redes sociais
+      - dados pessoais
+        - nome
+        - idade
+        - nacionalidade
+        - biografia
+    - hobbies
+      - atividades de interesse
+    - skills
+      - habilidades (comunicação, liderança, empatia...)
+    - formações / cursos
+      - realizados (os mais relevantes)
+    - experiência em programação
+      - projetos realizados
+    - formulário contato
+      - email
+      - nome
+      - assunto
+      - mensagem
+    - rodapé
+      - créditos
+
+  - Modelo completo no Figma (layout)
+
+  - Extra
+    - botão para visualizar em nova aba currículo em PDF
+
+  - Prazo
+    - 2 semanas
+    - sistema ágil de desenvolvimento
+      - Trello
+        - ferramenta de uso individual
+        - controlar andamento do projeto
+      - colunas Trello
+        - Pronto para iniciar
+          - aguardando desenvolvimento
+        - Desenvolvendo
+          - tarefa em andamento
+        - Pausado
+          - tarefa iniciada não concluída, suspensa
+        - Concluído
+          - tarefa finalizadas
+
+
+#### Ferramentas / Para saber mais
+
+  - Materiais apoio Alura
+  - Solucionar dúvidas do projeto
+  
+    - Cursos (HTML/CSS)
+    
+      - fase2 - iniciante em programação
+      - fase3 - especialização front-end
+      
+    - Artigos
+    
+      - Front-end e Back-end
+      - Ancorando elementos com HTML5
+      - Do zero para programador front-end
+      - Guia de unidades no CSS
+      - Como lidar com os limites de resolução em sites responsivos
+      - Organizando CSS no projeto
+      - Nomes de classes no CSS
+      - Formulário com "form validation" no HTML5
+      - CSS -animações com "transition animations"
+      - Capturando vlaro do "input" - introdução a seletores
+      - HTML CSS JS - definições
+      - Começando com front-end
+      - Código CSS mai limpo, flexível e reaproveitável
+      - Começar a programar com JS
+
+    - Alura+
+
+      - Diferença entre back-end e front-end (sem acesso)
+      - Como fornt-end utiliza Figma (com acesso)
+      - Data atributes do HTML5 (sem acesso)
+      - Box model e box sizing (com acesso)
+      - CSS flexbox: dicas para começar (com acesso)
+      - Iteradores em JS "for" e "while" (sem acesso)
+      - VS Code: dicas e truques (sem acesso)
+      - Faça um "for" dentro de "for" e laços dentro de laços (sem acesso)
+
+
+#### Ferramentas / Código base do projeto
+
+  - Criar HTML / CSS
+  - Código inicial fornecido no repositório
+    - focar em
+      - lógica JS
+      - responsividade CSS
+    - link do repositório com o projeto inicial
+https://github.com/alura-challenges/challenge-one-portfolio-br/archive/refs/heads/master.zip
+
+
+#### Ferramentas / Extra: animações
+
+  - Projeto interativo
+    - elemento muda de aparência ao passar o mouse
+
+
+#### Ferramentas / Publique sua página
+
+  - GiHup Pages
+  - compartilhar projeto
+
+
+
+### Backlog / Primeiros passos
+
+
+#### Modelo Figma
+
+  - Layout do projeto no Figma
+    - 3 telas (responsivo)
+https://www.figma.com/file/Mv4mSxBHzB5caI7bW2tLv6/Challenge-Front-end-Portf%C3%B3lio
+
+
+#### Elementos principais da página
+
+  - HTML
+  
+    - Título do projeto
+    - Menu principal
+    - Seções
+      - sobre
+      - hobbies
+      - skills
+      - formações / cursos
+      - experiência em programação
+    - formulário contato
+    - rodapé
+    - extra
+      - visualizar currículo em PDF / nova aba
+
+
+#### Criar repositório do projeto GitHub
+
+  - primeiro passo do desafio
+    - criar repositório no GitHub (feito)
+
+  - material de apoio
+    - Começando - configuração inicial do Git
+    - vídeo Como subir meu projeto no GitHub
+
+  - Links material de apoio
+  https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Configura%C3%A7%C3%A3o-Inicial-do-Git
+
+    https://youtu.be/aZY7TZ8Zte8
+
+
+
+### Backlog / Criar seções (HTML / CSS)
+
+
+#### Menu principal
+
+  - Elementos do menu
+    - seções do portfolio com links (âncoras)
+    - sugestão de layout (Figma)
+
+  - material de apoio
+    - artigo Ancorando elementos HTML5
+    - curso flexbox
+
+  - Links material de aopio
+    https://www.alura.com.br/artigos/ancorando-elementos-com-html5
+
+
+#### Apresentação (HTML / CSS)
+
+  - Elementos da seção
+    - imagem de perfil
+    - redes sociais
+    - dados pessoais
+      - nome
+      - idade
+      - nacionalidade
+      - biografia (+/- 50 caracteres)
+
+  - Transformar em código o que foi pedido
+    - tag img no HTML ou adicionar imagem pelo CSS
+    - boreder-radius pra forma circular
+
+  - material de apoio (links OK)
+    - Centralizando elementos com CSS
+    - Position CSS - entenda essa propriedade
+    - Flexbox CSS - guia completo, elementos e exemplos
+    - Alterando CSS com JS
+    - CSS Flexbox - dicas para começar
+    
+
+#### Sobre (HTML /CSS)
+
+  - Resumo biografia
+    - história / carreira
+
+
+#### Skills / Hobbies (HTML/CSS)
+
+  - habilidades (hard e soft)
+  - atividades de interesse
+
+
+#### Formações / Cursos (HTML/CSS)
+
+  - Trajetória acadêmica
+  - Cursos
+  - Realizações relevantes
+  - dedicação do tempo em formação
+
+  - Elementos da seção
+    - formações / cursos
+    - mais relevantes / ordem crescente
+
+
+#### Experiência programação  (HTML/CSS)
+
+  - Trabalhos realizados
+  - grande interessa dos recrutadores
+  - planejar bem as informações
+
+  - Elementos
+    - imagem do projeto (captura de tela)
+    - título do projeto (CSS)
+    - descrição (tecnologias / funcionalidades)
+    - botão para repositório no GitHub
+    - Extra
+      - demonstração (projeto publicado no GitHub)
+      - visualizar currículo em PDF (nova aba)
+
+
+#### Formulário contato
+
+  - Não é funcional (ainda)
+  - Apenas estrutura e estilização
+
+  - Elementos (campos)
+    - nome
+    - email
+    - assunto
+    - mensagem
+    - botão enviar
+
+
+
+### Backlog / Criar Validações JS (formulário contato)
+
+  - Validar as entradas do formulário
+  - funcional
+
+#### Nome
+
+  - Especificações
+    - preenchimento obrigatório
+    - máximo de 50 caracteres
+    - mostrar mensagem de erro se condições não forem atendidas
+
+  - material de apoio
+    - Curso validando formulário com JS (especialização front-end)
+
+
+#### Email
+
+  - Especificações
+    - preenchimento obrigatório
+    - formato de email
+    - mostrar mensagem de erro se condições não forem atendidas
+
+
+#### Assunto
+
+  - Especificações
+    - preenchimento obrigatório
+    - máximo 50 caracteres
+    - mostrar mensagem de erro se condições não forem atendidas
+
+
+#### Mensagem
+
+  - sugestão de elemento HTML
+    - <textarea>
+
+  - Especificações
+    - usuário ver/ler texto escrito
+    - preenchimento obrigatório
+    - máximo 300 caracteres
+    - mostrar mensagem de erro se condições não forem atendidas
+
+
+#### Enviar
+
+  - botão de confirmação de envio
+  - preparado para enviar requisição
+
+  - Especificações
+    - ativado só com todos os campos preenchidos
+    - deve realizar envio do formulário
+
+  - link de referência
+      https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/disabled
+
+
+
+/* --- fim ;)

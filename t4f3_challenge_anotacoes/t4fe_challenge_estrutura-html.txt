@@ -1,0 +1,110 @@
+body
+
+  div.all
+  
+    <!-- seção header (logo/nome/menu) -->
+    section.menu.container
+      header
+        img
+        h3.menu__title
+      nav
+        ul.menu__list
+          (li.menu__list__item>a)*6
+
+header.menu.container>(div.logo>img.logo__img+h3.logo_title)+nav.menu>ul.menu__list>(li.menu__list__item>a)*6
+
+    <!-- seção  banner (foto/título/apresenta/redes) -->
+    section.title.container
+      div.title__div
+        img.title__profile
+        div.title__container#sobremim
+          h2.title__bio
+          h3.title__description
+          ul.title__social
+            (li.title__social__item>a>img)*4
+
+    <!-- seção  sobre (título/biografia/assinatura) -->
+    section.sobre.container
+      div.sobre__container
+        h3.sobre__title
+        p.sobre__texto*2
+        img.sobre__assinatura
+
+    <!-- seção  skills (título/icones/nomes) -->
+    section.skills.container
+      h3.skills__title#skills
+      div.skills__line
+        div.skills__box)*6
+          ul
+            li.skills__img
+              img
+            li.skills__name
+
+      [ div.line>(div.box>ul>(li.imagem>img)+(li.name))*6 ]
+
+
+    <!-- seção  hobbies (título/icones/nomes) -->
+    section.hobbies.container#hobbies
+      h3.hobbies__title
+      div.hobbies__line
+        div.hobbies__box)*6
+          ul
+            li.hobbies__img
+              img
+            li.hobbies__name
+
+      [ div.line>(div.box>ul>(li.imagem>img)+(li.name))*6 ]
+
+
+    <!-- seção  formacao (título/logo/nomes/data) -->
+    section.academic.container
+      h2.academic__title#formacao
+      div.academic__courses
+        div.academic__courses__box)*3
+          ul.academic__courses__list
+            li.academic__courses__item__img)
+              img
+            li.academic__courses__item__title)
+              h4
+            li.academic__courses__item__subtitle)
+              p
+
+
+    <!-- seção  projetos (título/imagens/nome/descrição/botões) -->
+    section.projetos.container
+      h2.projetos__title__section#projetos
+      div.projetos__box)*4
+        img.projetos__img
+        div.projetos__info
+          h2.projetos__title
+          h3.projetos__text
+          div.projetos_description
+            span.projetos__repo)*2
+              a
+              button.projetos__botao--repo
+
+
+    <!-- seção  contato (título/texto/form/botão)-->
+    section.formcontato.container
+      div.formcontato__contato#contato
+        div.formcontato--esquerda
+          img.formcontato__img
+        div.formcontato__container__text
+          h2.formcontato__title
+          h3.formcontato__subtext)*2
+          form.formcontato__form
+            input.formcontato__input#nome
+            input.formcontato__input#email
+            input.formcontato__input#assunto
+            textarea.formcontato__textarea#mensagem
+            button.formcontato__botao
+
+
+    <!-- seção rodapé  (crédito/ano) -->
+    section.footer.container
+      div.footer__rodape
+        p
+        p
+
+
+/* --- fim ;)
