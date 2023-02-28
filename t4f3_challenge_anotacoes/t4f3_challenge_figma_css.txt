@@ -18,14 +18,49 @@ Alura, challenge, design, Figma, front-end, ONE, portfolio
 
 ## Body
 
+  - fontes do projeto:
+
+    Raleway 700, 600, 500, 400
+
+----
+
+  - vincular fonte no documento HTML
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+----
+
+  - importar fonte no arquivo CSS
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+----
+
+  - cores do projeto: 
+
+    #FFFFFF (branco)
+    #EAF2FD (azul 10%)
+    #2A7AE4 (azul 100%)
+    #EDEDED (cinza 10%)
+    #C8C8C8 (cinza 30%)
+    #A2A2A2 (cinza 50%)
+    #464646 (cinza 100%)
+    #F5F5F5 (fundo geral)
+
+----
+
 - comum a todas as telas
 
-  Font family: Raleway 700, 600, 500, 400
+  font-family: 'Raleway', sans-serif;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0px;
+
+----
 
 - mobile
 

@@ -12,6 +12,7 @@
 
 - Estrutura e estilização
 
+  - fidelidade ao layout fornecido
   - mobile first
   - responsividade
   - semântico
@@ -45,21 +46,40 @@
 
   - IDE: VS Code / Linux (Mint-21 Cinnamon)
 
-  - index.html
+  - imagens
+    - selecionar / capturar / produzir
+    - organizar na pasta "projeto/imagens"
+
+  - html
     - criar estrutura em etapas
     - a cada seção
-    
+    - index.html na pasta "projeto"
+    - importsar fontes
+       
   - css
     - criar estilos em etapas
     - a cada seção
     - arquivos individualizados (atomic design)
+    - organizar na pasta "projeto/assets/css"
     
   - js
     - manter estrutura Challenge Decodificador
       - funções auxiliares
       - redução / maximização / reaproveitamento código
     - adicionar estrutura de módulos
+    - organizar na pasta "js"
 
+  - experiência profissional
+    - formação em T
+      - design
+      - java
+      - html/css/js
+    - trabalhos desenvolvidos na pasta "projeto/jobs"
+        - portfolio
+        - decodificador
+        - tabuadas
+        - triângulos
+        - bolinhas coloridas
 
 
 
