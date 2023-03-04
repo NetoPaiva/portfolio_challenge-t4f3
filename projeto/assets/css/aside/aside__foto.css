@@ -1,0 +1,59 @@
+/*
+  a configuração CSS dos componentes do "aside"
+  serão exportadas para o arquivo "aside.css"
+ */
+
+/* mobile */
+
+.aside__foto{
+  border-radius: 50%;
+  
+  width: 6.125rem;
+  height: 6.125rem;
+  
+    /* width: 27.23vw; */
+    /* height: 27.23vw; */
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  .aside__foto{
+    margin-left: 2rem;
+
+    width: 9.125rem;
+    height: 9.125rem;
+    
+    /* width: 19.1vw; */
+    /* height: 19.1vw; */
+  }
+  
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+  
+  .aside__foto{
+    margin-left: 1rem;
+
+    width: 15rem;
+    height: 15rem;
+  }
+  
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+  
+  .aside__foto{
+    width: 23rem;
+    height: 23rem;
+  }
+
+}
+
+
+/* --- fim ;) */

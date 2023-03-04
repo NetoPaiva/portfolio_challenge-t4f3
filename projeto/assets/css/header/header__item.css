@@ -1,0 +1,59 @@
+/*
+  a configuração CSS dos componentes do "header"
+  serão exportadas para o arquivo "header.css"
+ */
+
+/* mobile */
+
+.header__item {
+  display: none;
+}
+
+.header__item--single {
+  display: flex;
+}
+
+.header__item__link {
+  font-size: 0.875rem;
+}
+
+/* tablete */
+
+@media screen and (min-width:764px) {
+
+  .header__item--single {
+    font-weight: 700;
+  }
+
+  .header__item__link {
+    font-size: 1rem;
+  }
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  .header__item {
+    display: flex;
+
+    font-weight: 500;
+    
+    margin-right: 1rem;
+  }
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1040px) {
+
+  .header__item {
+    margin-right: 2rem;
+  }
+
+}
+
+
+ /* --- fim ;) */

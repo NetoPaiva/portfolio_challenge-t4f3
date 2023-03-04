@@ -1,0 +1,160 @@
+### Challenge ONE - Portfolio
+
+
+# Memorial descritivo HTML
+
+
+## Anotações do processo de desenvolvimento da estrutura HTML do projeto
+
+
+### IDE - VS COde
+
+- Abrir pasta do projeto no VS COde
+
+- Criar arquivo "index.html"
+  - sintaxe Emmet
+    html:5
+  - alterar idioma para "pt-BR"
+  - incluir título da página (tag "title")
+  - buscar e vincular fontes do projeto ("Raleway" 400, 500, 600 e 700)
+
+- Configurações CSS básicas do projeto
+  - Criar pasta "assets" para guardar arquivos estáticos do projeto
+    - css
+    - imagens
+  - Anular configuração padrão dos navegadores
+    - normalize.css
+    - reset.css
+  - Vincular arquivos CSS no documento HTML (index.html)
+
+
+### Desenvolvimento mobile first
+
+- Criar por etapas a estrutura HTML e estilo CSS conforme layout proposto (Figma)
+
+- Criar os estilos com base no conceito "atomic design"
+  - um arquivo CSS para cada componente dos elementos principais do HTML
+
+
+#### Criar estrutura HTML do cabeçalho (header)
+
+  - sintaxe Emmet com metodologia BEM
+    header.header__container>nav.nav__container>h2.nav__logo+ul.nav__list>
+    (l1.nav__item>a.nav__link)*6
+
+  - estrutura criada
+    <header class="header__container">
+      <nav class="nav__container">
+         <h2 class="nav__logo"></h2>
+         <ul class="nav__list">
+            <l1 class="nav__item"><a href="" class="nav__link"></a></l1>
+            <l1 class="nav__item"><a href="" class="nav__link"></a></l1>
+            <l1 class="nav__item"><a href="" class="nav__link"></a></l1>
+            <l1 class="nav__item"><a href="" class="nav__link"></a></l1>
+            <l1 class="nav__item"><a href="" class="nav__link"></a></l1>
+            <l1 class="nav__item"><a href="" class="nav__link"></a></l1>
+         </ul>
+      </nav>
+    </header>
+
+  - incluir nome do autor no "h2"
+  - incluir "#" no caminho dos links (href="#")
+  - incluir modificador no último item da lista de links (--single)
+  - incluir nomes das seções em cada item da lista
+    Sobre mim
+    Skills
+    Hobbies
+    Formação
+    Projetos
+    netopaiva@yahoo.com
+
+
+#### Criar configurações básicas de estilo do projeto 
+
+  - organizar os arquivos na pasta "/assets/css/basic"
+
+  - base.css
+    - cores e fontes do root
+    - margens do body
+    - margens e espaçamentos dos títulos e listas
+    - aparência dos links
+    - responsividade (tablete / laptop / desktop)
+  
+    - normalize.css
+      - anular configuração padrão dos navegadores
+
+  - vincular os arquivos ao documento HTML (index.html)
+
+
+#### Criar estilo do cabeçalho
+
+  - criar arquivo "header.css" na pasta "assets/css"
+  - criar arquivos CSS para cada componente do elemento "header"
+    - organizados na pasta "assets/css/header"
+  - importar cada componente para o arquivo "header.css"
+  - vincular arquivo "header.css" no documento HTML
+
+  - seguir modelo Figma
+  - exibir icone do "logo"
+  - ocultar itens da lista de links (mobile / tablete)
+  - exibir apenas email (mobile / tablete)
+  - configurar responsividade
+    - peso da fonte (tablete / desktop)
+    - exibir lista completa de links (desktop)
+
+
+#### Criar estrutura "banner" (tag semântica "aside")
+
+  - aside.aside__container
+    - img.aside__foto
+    - div.aside__descricao
+      - h1.aside__titulo
+      - h2.asisde__subtitulo
+      - ul.aside__lista
+        - li.aside__lista__item
+          - a.aside__lista__link)*4
+
+  - sintaxe Emmet
+  aside.aside__container>img.aside__foto+div.aside__descricao>h1.aside__titulo+h2.asisde__subtitulo+ul.aside__lista>(li.aside__item>a)*4
+
+  - estrutura criada
+
+    <aside class="aside__container">
+      <img src="" alt="" class="aside__foto">
+      <div class="aside__descricao">
+        <h1 class="aside__titulo"></h1>
+        <h2 class="asisde__subtitulo"></h2>
+          <ul class="aside__lista">
+            <li class="aside__lista__item"><a class="aside__lista__link" href=""></a></li>
+            <li class="aside__lista__item"><a class="aside__lista__link" href=""></a></li>
+            <li class="aside__lista__item"><a class="aside__lista__link" href=""></a></li>
+            <li class="aside__lista__item"><a class="aside__lista__link" href=""></a></li>
+          </ul>
+      </div>
+    </aside>
+
+  - adicionar informações aos elementos
+    - endereço e "alt" da imagem
+    - texto do título e subtítulo
+    - endereço das redes sociais para abrir em nova aba
+    - endereço do currículo para abiri em nova aba
+
+
+#### Reproduzir estilo do banner (Figma)
+
+  - criar arquivo "aside.css" na pasta "assets/css"
+  - criar arquivos CSS para cada componente do elemento "aside"
+    - organizados na pasta "assets/css/aside"
+  - impostar cada componente para o arquivo "aside.css"
+  - vincular arquivo "aside.css" no documento HTML
+
+  - caracterísitcas dos componentes
+    - foto com borda circular
+    - título e subtítulo alinhados à esquerda
+    - lista de links em uma linha
+    - incluir imagem da seta-abre-link
+    - ajustar responsividade 
+
+
+
+/* --- fim :)

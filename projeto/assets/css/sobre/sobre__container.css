@@ -1,0 +1,54 @@
+/*
+  a configuração CSS dos componentes do "sobre"
+  serão exportadas para o arquivo "sobre.css"
+ */
+
+/* mobile */
+
+.sobre__container{
+  background-color: var(--azul10);
+
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+
+  padding: 1rem;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  .sobre__container{
+    padding: 2rem;  
+  }
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  .sobre__container{
+    margin: auto;
+    padding: 0 7rem;
+
+    max-width: 71rem;
+  }
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  .sobre__container{
+    padding: 0 9.5rem;
+
+    max-width: 80rem;
+ }
+
+}
+
+
+/* --- fim ;) */

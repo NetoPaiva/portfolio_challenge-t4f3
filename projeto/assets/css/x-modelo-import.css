@@ -1,0 +1,15 @@
+/* 
+  este arquivo reune todos os componentes do elemento 'xxx',
+  que foram definidos em arquivos CSS específicos
+  e orgnizados na pasta 'assets/css/xxx',
+  facilitando a importação dos estilos no documento HTML.
+*/
+
+@import url(../css/);
+@import url(../css/);
+@import url(../css/);
+@import url(../css/);
+@import url(../css/);
+
+
+/* --- fim ;) */

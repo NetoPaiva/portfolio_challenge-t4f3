@@ -1,0 +1,38 @@
+/*
+  a configuração CSS dos componentes do "header"
+  serão exportadas para o arquivo "header.css"
+ */
+
+/* mobile */
+
+.header__lista {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+/* tablete */
+
+@media screen and (min-width:764px) {
+
+  .header__lista{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  .header__lista {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+
+ /* --- fim ;) */

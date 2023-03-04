@@ -1,33 +1,63 @@
-/* estilização geral do proejto */
+/* 
+  estilização geral do projeto:
+    - variáveis (cores / fonte)
+    - body
+    - títulos
+    - listas
+    - links (tag "a")
+*/
+
 
 /* importar fonte */
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
 
+
 /* cores e fonte */
+
 :root {
   --azul10: #EAF2FD;
   --azul100: #2A7AE4;
   --branco: #FFFFFF;
-  --fundo: #F5F5F5;
   --cinza10: #EDEDED;
   --cinza30: #C8C8C8;
   --cinza50: #A2A2A2;
   --cinza100: #464646;
+  --fundo: #F5F5F5;
 
   --raleway: 'Raleway', sans-serif;
 }
 
-/* estilização genérica dos elementos */
+
+/* elementos básicos */
+
+/* mobile */
 
 body {
-  background-color: var(--fundo);
+  /* align-items: center;
+  display: flex;
+  flex-direction: column; */
 
+  background-color: var(--fundo);
+  
   font-family: var(--raleway);
-  color: var(--cinza100);
+  font-size: 16px; /* equivale a 1rem */
+
+  color: var(--cinza100); /* cor da fonte */
+
+  margin: 0;
+  padding: 0;
+
+  width: 100vw;
 }
 
-.container{
-  padding: 1rem;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  padding: 0;
 }
 
 a{
@@ -39,17 +69,5 @@ a:hover{
   text-decoration: underline;
 }
 
-@media screen and (min-width:768px){
-  .container{
-    padding: 1rem 2rem;
-  }
-}
 
-@media screen and (min-width:1024px) {
-  body{
-    margin: 0 9.5rem;
-  }
-  .container{
-    padding: 2rem 0;
-  }
-}
+/* --- fim ;) */

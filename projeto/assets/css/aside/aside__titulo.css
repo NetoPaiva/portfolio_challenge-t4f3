@@ -1,0 +1,59 @@
+/*
+  a configuração CSS dos componentes do "aside"
+  serão exportadas para o arquivo "aside.css"
+ */
+
+/* mobile */
+
+.aside__titulo{
+  font-size: 1.375rem;
+  line-height: 1.6rem;
+
+  margin-top: 1rem;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  .aside__titulo{
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+
+    max-width: 85%;
+  }
+  
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+  
+  .aside__titulo{
+    font-size: 2rem;
+    line-height: 2.3rem;
+
+    margin-top: 3rem;
+
+    max-width: 100%;
+  }
+  
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+  
+  .aside__titulo{
+    font-size: 3.25rem;
+    line-height: 3.85rem;
+
+    margin-top: 3.8rem;
+
+    max-width: 100%;
+  }
+}
+
+
+/* --- fim ;) */

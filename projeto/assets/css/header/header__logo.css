@@ -1,0 +1,32 @@
+/*
+  a configuração CSS dos componentes do "header"
+  serão exportadas para o arquivo "header.css"
+ */
+
+/* mobile */
+
+.header__logo {
+  align-items: center;
+
+  display: flex;
+  flex-direction: row;
+
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.header__logo::before {
+  content: url(../../imagens/nav-logo.png);
+
+  align-items: center;
+  display: flex;
+
+  height: 1.5rem;
+
+  margin-right: 0.5rem;
+}
+
+/* tablete / laptop / desktop - sem alterações */
+
+
+ /* --- fim ;) */

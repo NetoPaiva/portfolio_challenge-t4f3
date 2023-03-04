@@ -1,0 +1,61 @@
+/*
+  a configuração CSS dos componentes do "aside"
+  serão exportadas para o arquivo "aside.css"
+ */
+
+/* mobile */
+
+.aside__lista{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 0;
+}
+
+.aside__lista__item{
+  display: flex;
+  height: 1rem;
+  
+  font-size: 0.875rem;
+  font-weight: 600;
+  
+  list-style: none;
+}
+
+.aside__lista__item::after{
+  align-items: center;
+  color: var(--cinza100);
+
+  content: url(../../imagens/arrow_back.png);
+}
+
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  .aside__lista{
+    justify-content:start;
+  }
+
+  .aside__lista__item{
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .aside__lista__item::after{
+    margin-right: 2rem;
+ 
+    /* não está alterando o tamanho da imagem */
+    /* height: 1.5rem; */
+    /* width: 1.5rem;  */
+  }
+  
+}
+
+/* laptop e desktop - sem alterações */
+
+
+/* --- fim ;) */
+

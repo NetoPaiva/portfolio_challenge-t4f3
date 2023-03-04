@@ -1,0 +1,15 @@
+/* 
+  este arquivo reune todos os componentes do elemento 'hobbies',
+  que foram definidos em arquivos CSS específicos
+  e orgnizados na pasta 'assets/css/hobbies',
+  facilitando a importação dos estilos no documento HTML.
+*/
+
+@import url(../css/hobbies/);
+@import url(../css/hobbies/);
+@import url(../css/hobbies/);
+@import url(../css/hobbies/);
+@import url(../css/hobbies/);
+
+
+/* --- fim ;) */

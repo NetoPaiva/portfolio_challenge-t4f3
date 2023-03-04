@@ -1,0 +1,15 @@
+/* 
+  este arquivo reune todos os componentes do elemento 'aside',
+  que foram definidos em arquivos CSS específicos
+  e orgnizados na pasta 'assets/css/aside',
+  facilitando a importação dos estilos no documento HTML.
+*/
+
+@import url(../css/aside/aside__container.css);
+@import url(../css/aside/aside__foto.css);
+@import url(../css/aside/aside__titulo.css);
+@import url(../css/aside/aside__subtitulo.css);
+@import url(../css/aside/aside__lista.css);
+
+
+/* --- fim ;) */
