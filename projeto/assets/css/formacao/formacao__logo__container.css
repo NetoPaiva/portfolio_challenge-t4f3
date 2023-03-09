@@ -1,0 +1,46 @@
+/*
+  a configuração CSS dos componentes do "formacao"
+  serão exportadas para o arquivo "formacao.css"
+ */
+
+/* mobile */
+
+.formacao__logo__container{
+  background-color: var(--branco);
+
+  display: flex;
+  justify-content: space-around;
+
+  height: 7.375rem;
+  
+  margin-top: 1rem;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  /* sem alterações */
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  /* sem alterações */
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  .formacao__logo__container{
+    height: 100%;
+  }
+
+}
+
+
+/* --- fim ;) */

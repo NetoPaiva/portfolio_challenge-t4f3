@@ -1,0 +1,41 @@
+/*
+  a configuração CSS dos componentes do "hobbies"
+  serão exportadas para o arquivo "hobbies.css"
+ */
+
+/* mobile */
+
+  .hobbies__titulo{
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 1.625rem                                                           
+  }
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  /* sem alterações */
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  /* sem alterações */
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  .hobbies__titulo{
+    font-size: 2rem;
+    line-height: 2.375rem;
+  }
+
+}
+
+
+/* --- fim ;) */

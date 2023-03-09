@@ -1,0 +1,52 @@
+/*
+  a configuração CSS dos componentes do "hobbies"
+  serão exportadas para o arquivo "hobbies.css"
+ */
+ 
+/* mobile */
+
+.hobbies__container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  .hobbies__container{
+    padding: 2rem;
+  }
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  .hobbies__container{
+    margin: auto;
+    padding: 5rem 7rem;
+
+    max-width: 71rem;
+  }
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  .hobbies__container{
+    padding: 5.5rem 9.5rem;
+
+    max-width: 80rem;
+  }
+
+}
+
+
+/* --- fim ;) */

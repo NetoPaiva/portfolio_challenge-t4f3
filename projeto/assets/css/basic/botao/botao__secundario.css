@@ -1,0 +1,67 @@
+/*
+  a configuração CSS dos componentes do "botao"
+  serão exportadas para o arquivo "botao.css"
+  dentro da pasta "/assets/css/basic/botao.css"
+ */
+
+/* mobile */
+
+.botao__secundario{
+  background-color: var(--branco);
+
+  border: 1px solid var(--azul100);
+
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--azul100);
+  text-align: center;
+  
+  padding: 0.75rem 1rem;
+  margin-right: 1rem;
+}
+
+.botao__secundario:hover {
+  background-color: var(--azul20);
+
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+
+  padding: 1rem;
+}
+
+/* tablete */
+@media screen and (min-width:768px){
+  /* sem alterações */
+}
+
+/* laptop */
+@media screen and (min-width:1024px) {
+
+  .botao__secundario{
+    background-color: var(--branco);
+  
+    border: 1px solid var(--azul100);
+  
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--azul100);
+    text-align: center;
+    
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .botao__secundario:hover {
+    background-color: var(--azul20);
+  }
+  
+}
+
+/* desktop */
+@media screen and (min-width:1440px) {
+  /* sem alterações */
+}
+
+
+/* --- fim ;) */

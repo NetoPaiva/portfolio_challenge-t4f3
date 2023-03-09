@@ -17,6 +17,8 @@
 
 :root {
   --azul10: #EAF2FD;
+  --azul20: #D4E4FA;
+  --azul80: #5595E9;
   --azul100: #2A7AE4;
   --branco: #FFFFFF;
   --cinza10: #EDEDED;
@@ -56,8 +58,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-ul, li {
+ol, ul, li {
+  list-style: none;
+
+  margin: 0;
   padding: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 a{

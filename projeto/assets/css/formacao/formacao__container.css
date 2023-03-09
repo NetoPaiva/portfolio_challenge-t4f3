@@ -1,37 +1,35 @@
 /*
-  a configuração CSS dos componentes do "sobre"
-  serão exportadas para o arquivo "sobre.css"
+  a configuração CSS dos componentes do "formacao"
+  serão exportadas para o arquivo "formacao.css"
  */
 
 /* mobile */
 
-.sobre__container{
+.formacao__container{
   background-color: var(--azul10);
 
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content:space-between;
 
-  padding: 1rem;
+  padding: 2rem;
 }
 
 /* tablete */
 
 @media screen and (min-width:768px){
 
-  .sobre__container{
-    padding: 2rem;  
-  }
-
+  /* sem alterações */
 }
 
 /* laptop */
 
 @media screen and (min-width:1024px) {
 
-  .sobre__container{
+  .formacao__container{
     margin: auto;
-    padding: 2.5rem 7rem;
+    /* margin-bottom: 3.5rem; */
+    padding: 2rem 7rem;
 
     max-width: 71rem;
   }
@@ -42,13 +40,11 @@
 
 @media screen and (min-width:1440px) {
 
-  .sobre__container{
-    margin: auto;
-    margin-top: 2rem;
-    padding: 4rem 9.5rem;
+  .formacao__container{
+    padding: 5.125rem 9.5rem;
 
     max-width: 80rem;
- }
+  }
 
 }
 

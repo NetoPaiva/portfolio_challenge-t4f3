@@ -1,11 +1,11 @@
 /*
-  a configuração CSS dos componentes do "header"
-  serão exportadas para o arquivo "header.css"
+  a configuração CSS dos componentes do "header-nav"
+  serão exportadas para o arquivo "header-nav.css"
  */
 
 /* mobile */
 
-.header__container{
+.nav__container{
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -20,7 +20,7 @@
 
 @media screen and (min-width:768px){
 
-  .header__container{
+  .nav__container{
     padding: 1rem 2rem;
   }
 
@@ -30,7 +30,7 @@
 
 @media screen and (min-width:1024px) {
  
-   .header__container{
+   .nav__container{
      margin: auto;
      padding: 2rem 7rem;
 
@@ -43,7 +43,7 @@
 
 @media screen and (min-width:1440px) {
   
-  .header__container{
+  .nav__container{
     padding: 2rem 9.5rem;
 
     max-width: 80rem;

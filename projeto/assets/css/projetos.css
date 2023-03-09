@@ -5,11 +5,15 @@
   facilitando a importação dos estilos no documento HTML.
 */
 
-@import url(../css/projetos/);
-@import url(../css/projetos/);
-@import url(../css/projetos/);
-@import url(../css/projetos/);
-@import url(../css/projetos/);
+@import url(../css/projetos/projetos__container.css);
+@import url(../css/projetos/projetos__titulo.css);
+@import url(../css/projetos/projetos__lista.css);
+@import url(../css/projetos/projetos__item.css);
+@import url(../css/projetos/projetos__tela.css);
+@import url(../css/projetos/projetos__textos__container.css);
+@import url(../css/projetos/projetos__nome.css);
+@import url(../css/projetos/projetos__texto.css);
+
 
 
 /* --- fim ;) */

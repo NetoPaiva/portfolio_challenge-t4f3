@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="32"
+   height="32"
+   viewBox="0 0 32 32"
+   fill="none"
+   version="1.1"
+   id="svg11"
+   sodipodi:docname="icone_cozinhar.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview13"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="15.578446"
+     inkscape:cx="15.983622"
+     inkscape:cy="16.015718"
+     inkscape:current-layer="svg11" />
+  <g
+     clip-path="url(#clip0_25207_784)"
+     id="g4"
+     transform="matrix(0.94137615,0,0,0.99137239,0.56085166,-0.14169147)">
+    <path
+       d="M 10.8,17.7866 14.5733,14.0133 5.21332,4.66661 c -2.08,2.08 -2.08,5.45329 0,7.54669 z m 9.04,-2.4133 c 2.04,0.9466 4.9067,0.28 7.0267,-1.84 2.5466,-2.5467 3.04,-6.20002 1.08,-8.16002 -1.9467,-1.94667 -5.6,-1.46667 -8.16,1.08 -2.12,2.12 -2.7867,4.98662 -1.84,7.02662 l -13.01338,13.0134 1.88,1.88 9.18668,-9.16 9.1733,9.1733 1.88,-1.88 -9.1733,-9.1733 z"
+       fill="#2a7ae4"
+       id="path2" />
+  </g>
+  <defs
+     id="defs9">
+    <clipPath
+       id="clip0_25207_784">
+      <rect
+         width="32"
+         height="32"
+         fill="white"
+         id="rect6" />
+    </clipPath>
+  </defs>
+</svg>

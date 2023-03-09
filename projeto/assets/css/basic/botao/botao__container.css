@@ -1,0 +1,33 @@
+/*
+  a configuração CSS dos componentes do "botao"
+  serão exportadas para o arquivo "botao.css"
+  dentro da pasta "/assets/css/basic/botao.css"
+ */
+
+/* mobile */
+
+.botao__container{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+
+  margin-top: 0.5rem;
+}
+
+/* tablete */
+@media screen and (min-width:768px){
+  /* sem alterações */
+}
+
+/* laptop */
+@media screen and (min-width:1024px) {
+  /* sem alterações */
+}
+
+/* desktop */
+@media screen and (min-width:1440px) {
+  /* sem alterações */
+}
+
+
+/* --- fim ;) */

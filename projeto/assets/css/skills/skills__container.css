@@ -1,0 +1,53 @@
+/*
+  a configuração CSS dos componentes do "skills"
+  serão exportadas para o arquivo "skills.css"
+ */
+
+/* mobile */
+
+.skills__container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  .skills__container{
+    padding: 2rem;
+  }
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  .skills__container{
+    margin: auto;
+    /* margin-bottom: 3.5rem; */
+    padding: 2rem 7rem 0;
+
+    max-width: 71rem;
+  }
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  .skills__container{
+    padding: 2rem 9.5rem 0;
+
+    max-width: 80rem;
+  }
+
+}
+
+
+/* --- fim ;) */

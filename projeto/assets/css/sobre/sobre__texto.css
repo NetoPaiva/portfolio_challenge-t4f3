@@ -5,13 +5,19 @@
 
 /* mobile */
 
+.sobre__texto{
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1rem;
 
+  margin: 0.4375rem 0;
+}
 
 /* tablete */
 
 @media screen and (min-width:768px){
 
-
+  /* sem alterações */
 
 }
 
@@ -19,7 +25,9 @@
 
 @media screen and (min-width:1024px) {
 
-
+  .sobre__texto{
+    margin-right: 18rem;
+  }
 
 }
 
@@ -27,7 +35,23 @@
 
 @media screen and (min-width:1440px) {
 
+  .sobre__texto{
+    font-size: 1rem;
+    line-height: 1.1875rem;
 
+    margin: 0.75rem 0;
+    margin-right: 24.0625rem;
+  }
+  
+}
+
+/* telas maiores */
+
+@media screen and (min-width:1540px) {
+
+  .sobre__texto{
+    margin-right: 26.25rem;
+  }
   
 }
 

@@ -1,22 +1,23 @@
 /*
-  a configuração CSS dos componentes do "sobre"
-  serão exportadas para o arquivo "sobre.css"
+  a configuração CSS dos componentes do "skills"
+  serão exportadas para o arquivo "skills.css"
  */
 
 /* mobile */
 
-.sobre__imagem{
-  margin-top: 0.5625rem;
-  width: 3.25rem;
+.skills__nome{
+  font-weight: 700;
+  font-size: 1rem;
+
+  padding-top: 0.5rem;
 }
+
 
 /* tablete */
 
 @media screen and (min-width:768px){
 
-  .sobre__imagem{
-    width: 4.5rem;
-  }
+  /* sem alterações */
 
 }
 
@@ -24,9 +25,7 @@
 
 @media screen and (min-width:1024px) {
 
-  .sobre__imagem{
-    width: 5.75rem;
-  }
+  /* sem alterações */
 
 }
 

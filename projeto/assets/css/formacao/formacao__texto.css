@@ -1,0 +1,42 @@
+/*
+  a configuração CSS dos componentes do "formacao"
+  serão exportadas para o arquivo "formacao.css"
+ */
+
+/* mobile */
+
+.formacao__texto{
+  font-weight: 500;
+  font-size: 0.875rem;
+
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  /* sem alterações */
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  /* sem alterações */
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  /* sem alterações */
+
+}
+
+
+/* --- fim ;) */

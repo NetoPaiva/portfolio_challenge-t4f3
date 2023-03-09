@@ -17,7 +17,7 @@
 
 ### IDE - VS Code
 
-  - Abrir pasta do projeto no VS COde
+  - Abrir pasta do projeto no VS Code
 
 
 #### Criar arquivo "index.html"
@@ -217,13 +217,13 @@
 
 - Sintaxe Emmet
 
-  section.skills__container>h2.skills__titulo>ul.skills__lista>(li.skills__item>img.skills__icone+h3.skills__nome)*6
+  section.skills__container>h2.skills__titulo+ul.skills__lista>(li.skills__item>img.skills__icone+h3.skills__nome)*6
 
 
 - Estrutura HTML
 
   <section class="skills__container">
-    <h2 class="skills__titulo">
+    <h2 class="skills__titulo"></h2>
       <ul class="skills__lista">
         <li class="skills__item">
           <img src="" alt="" class="skills__icone">
@@ -250,7 +250,7 @@
           <h3 class="skills__nome"></h3>
         </li>
       </ul>
-    </h2>
+    
   </section>
 
 
@@ -288,40 +288,39 @@
 
 - Sintaxe Emmet
 
-  section.hobbies__container>h2.hobbies__titulo>ul.hobbies__lista>(li.hobbies__item>img.hobbies__icone+h3.hobbies__nome)*6
+  section.hobbies__container>h2.hobbies__titulo+ul.hobbies__lista>(li.hobbies__item>img.hobbies__icone+h3.hobbies__nome)*6
 
 
 - Estrutura HTML
 
   <section class="hobbies__container">
-    <h2 class="hobbies__titulo">
-      <ul class="hobbies__lista">
-        <li class="hobbies__item">
-          <img src="" alt="" class="hobbies__icone">
-          <h3 class="hobbies__nome"></h3>
-        </li>
-        <li class="hobbies__item">
-          <img src="" alt="" class="hobbies__icone">
-          <h3 class="hobbies__nome"></h3>
-        </li>
-        <li class="hobbies__item">
-          <img src="" alt="" class="hobbies__icone">
-          <h3 class="hobbies__nome"></h3>
-        </li>
-        <li class="hobbies__item">
-          <img src="" alt="" class="hobbies__icone">
-          <h3 class="hobbies__nome"></h3>
-        </li>
-        <li class="hobbies__item">
-          <img src="" alt="" class="hobbies__icone">
-          <h3 class="hobbies__nome"></h3>
-        </li>
-        <li class="hobbies__item">
-          <img src="" alt="" class="hobbies__icone">
-          <h3 class="hobbies__nome"></h3>
-        </li>
-      </ul>
-    </h2>
+    <h2 class="hobbies__titulo"></h2>
+    <ul class="hobbies__lista">
+      <li class="hobbies__item">
+        <img src="" alt="" class="hobbies__icone">
+        <h3 class="hobbies__nome"></h3>
+      </li>
+      <li class="hobbies__item">
+        <img src="" alt="" class="hobbies__icone">
+        <h3 class="hobbies__nome"></h3>
+      </li>
+      <li class="hobbies__item">
+        <img src="" alt="" class="hobbies__icone">
+        <h3 class="hobbies__nome"></h3>
+      </li>
+      <li class="hobbies__item">
+        <img src="" alt="" class="hobbies__icone">
+        <h3 class="hobbies__nome"></h3>
+      </li>
+      <li class="hobbies__item">
+        <img src="" alt="" class="hobbies__icone">
+        <h3 class="hobbies__nome"></h3>
+      </li>
+      <li class="hobbies__item">
+        <img src="" alt="" class="hobbies__icone">
+        <h3 class="hobbies__nome"></h3>
+      </li>
+    </ul>
   </section>
 
 
@@ -353,14 +352,15 @@
     h2.formacao__titulo
     ul.formacao__lista
       li.formacao__item
-        img.formacao__logo
+        div.formacao__logo__container
+          img.formacao__logo
         h3.formacao__nome
         p.formacao__texto)*3
 
 
 - Sintaxe Emmet
 
-  section.formacao__container>h2.formacao__titulo+ul.formacao__lista>(li.formacao__item>img.formacao__logo+h3.formacao__nome+p.formacao__texto)*3
+  section.formacao__container>h2.formacao__titulo+ul.formacao__lista>(li.formacao__item>(div.formacao__logo__container>img.formacao__logo)+h3.formacao__nome+p.formacao__texto)*3
 
 
 - Estrutura HTML
@@ -369,17 +369,23 @@
     <h2 class="formacao__titulo"></h2>
     <ul class="formacao__lista">
       <li class="formacao__item">
-        <img src="" alt="" class="formacao__logo">
+        <div class="formacao__logo__container">
+          <img src="" alt="" class="formacao__logo">
+        </div>
         <h3 class="formacao__nome"></h3>
         <p class="formacao__texto"></p>
       </li>
       <li class="formacao__item">
-        <img src="" alt="" class="formacao__logo">
+        <div class="formacao__logo__container">
+          <img src="" alt="" class="formacao__logo">
+        </div>
         <h3 class="formacao__nome"></h3>
         <p class="formacao__texto"></p>
       </li>
       <li class="formacao__item">
-        <img src="" alt="" class="formacao__logo">
+        <div class="formacao__logo__container">
+          <img src="" alt="" class="formacao__logo">
+        </div>
         <h3 class="formacao__nome"></h3>
         <p class="formacao__texto"></p>
       </li>
@@ -417,51 +423,58 @@
   ul.projetos__lista
     li.projetos__item
       img.projetos__tela
-      h3.projetos__nome
-      p.projetos__texto
-      div.projetos__botao__container
-        h4.projeto_botao.botao)*2)*3
+      div.projetos__textos__container
+        h3.projetos__nome
+        p.projetos__texto
+        div.projetos__botao__container
+          h4.projeto_botao.botao)*2)*3
 
 
 - Sintaxe Emmet
 
-  section.projetos__container>h2.projetos__titulo+ul.projetos__lista>(li.projetos__item>img.projetos__tela+h3.projetos__nome+p.projetos__texto+div.projetos__botao__container>(h4.projeto__botao.botao)*2)*3
+section.projetos__container>h2.projetos__titulo+ul.projetos__lista>(li.projetos__item>img.projetos__tela+div.projetos__textos__container>h3.projetos__nome+p.projetos__texto+div.botao__container>a.botao__secundario+a.botao__primario)*3
 
 
 - Estrutura HTML
 
-  <section class="projetos__container">
-    <h2 class="projetos__titulo"></h2>
-    <ul class="projetos__lista">
-      <li class="projetos__item">
-        <img src="" alt="" class="projetos__tela">
+<section class="projetos__container">
+  <h2 class="projetos__titulo"></h2>
+  <ul class="projetos__lista">
+    <li class="projetos__item">
+      <img src="" alt="" class="projetos__tela">
+      <div class="projetos__textos__container">
         <h3 class="projetos__nome"></h3>
         <p class="projetos__texto"></p>
-        <div class="projetos__botao__container">
-          <h4 class="projeto__botao botao"></h4>
-          <h4 class="projeto__botao botao"></h4>
+        <div class="botao__container">
+          <a href="" class="botao__secundario"></a>
+          <a href="" class="botao__primario"></a>
         </div>
-      </li>
-      <li class="projetos__item">
-        <img src="" alt="" class="projetos__tela">
+      </div>
+    </li>
+    <li class="projetos__item">
+      <img src="" alt="" class="projetos__tela">
+      <div class="projetos__textos__container">
         <h3 class="projetos__nome"></h3>
         <p class="projetos__texto"></p>
-        <div class="projetos__botao__container">
-          <h4 class="projeto__botao botao"></h4>
-          <h4 class="projeto__botao botao"></h4>
+        <div class="botao__container">
+          <a href="" class="botao__secundario"></a>
+          <a href="" class="botao__primario"></a>
         </div>
-      </li>
-      <li class="projetos__item">
-        <img src="" alt="" class="projetos__tela">
+      </div>
+    </li>
+    <li class="projetos__item">
+      <img src="" alt="" class="projetos__tela">
+      <div class="projetos__textos__container">
         <h3 class="projetos__nome"></h3>
         <p class="projetos__texto"></p>
-        <div class="projetos__botao__container">
-          <h4 class="projeto__botao botao"></h4>
-          <h4 class="projeto__botao botao"></h4>
+        <div class="botao__container">
+          <a href="" class="botao__secundario"></a>
+          <a href="" class="botao__primario"></a>
         </div>
-      </li>
-    </ul>
-  </section>
+      </div>
+    </li>
+  </ul>
+</section>
 
 
   - adicionar informações aos elementos
@@ -600,6 +613,12 @@
 
 -------------------------------------------------
 
+### Revisão
 
-    
+  - criar tag "main" (semântica)
+  - incluir todas as seções na tag "main"
+  - corrigir textos
+
+
+
 /* --- fim ;)

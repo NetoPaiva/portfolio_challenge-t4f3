@@ -1,0 +1,47 @@
+/*
+  a configuração CSS dos componentes do "skills"
+  serão exportadas para o arquivo "skills.css"
+ */
+
+/* mobile */
+
+
+.skills__lista{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills__lista--div{
+  width: 100%;
+}
+
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  .hobbies__lista{
+    width: 100%;
+  }
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  /* sem alterações */
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  /* sem alterações */
+
+}
+
+
+/* --- fim ;) */

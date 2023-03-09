@@ -1,0 +1,55 @@
+/*
+  a configuração CSS dos componentes do "projetos"
+  serão exportadas para o arquivo "projetos.css"
+ */
+
+/* mobile */
+
+.projetos__item{
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.projetos__item.single{
+  margin: 4rem 0;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  /* sem alterações */
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  .projetos__item{
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .projetos__item.single{
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+ 
+  /* sem alterações */
+ 
+}
+
+
+/* --- fim ;) */

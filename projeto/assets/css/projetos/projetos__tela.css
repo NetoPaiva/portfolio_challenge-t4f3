@@ -1,0 +1,66 @@
+/*
+  a configuração CSS dos componentes do "projetos"
+  serão exportadas para o arquivo "projetos.css"
+ */
+
+/* mobile */
+
+.projetos__tela{
+  display: flex;
+  flex-direction: column;
+
+  /* width: 18.5rem; */
+  width: 82.25vw;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+.projetos__tela{
+  /* width: 44rem; */
+  width: 91.67vw;
+}
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+.projetos__tela{
+  filter: drop-shadow(0 0.25rem 0.25rem rgba(0,0,0,0.25));
+
+  margin-right: 1rem;
+
+  width: 50vw;
+}
+
+.projetos__tela.single{
+  margin: 0;
+}
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  .projetos__tela{
+    width: 52.23vw;
+  }
+
+}
+
+/* telas maiores */
+
+@media screen and (min-width:1450px) {
+
+  .projetos__tela{
+     max-width: 47rem;
+  }
+
+}
+
+
+/* --- fim ;) */

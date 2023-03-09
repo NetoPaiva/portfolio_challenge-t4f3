@@ -5,11 +5,12 @@
   facilitando a importação dos estilos no documento HTML.
 */
 
-@import url(../css/skills/);
-@import url(../css/skills/);
-@import url(../css/skills/);
-@import url(../css/skills/);
-@import url(../css/skills/);
+@import url(../css/skills/skills__container.css);
+@import url(../css/skills/skills__titulo.css);
+@import url(../css/skills/skills__lista.css);
+@import url(../css/skills/skills__item.css);
+@import url(../css/skills/skills__icone.css);
+@import url(../css/skills/skills__nome.css);
 
 
 /* --- fim ;) */

@@ -1,0 +1,51 @@
+/*
+  a configuração CSS dos componentes do "projetos"
+  serão exportadas para o arquivo "projetos.css"
+ */
+
+/* mobile */
+
+.projetos__container{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+
+  padding: 2rem;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  /* sem alterações */
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  .projetos__container{
+    margin: auto;
+    margin-top: 2rem;
+    padding: 0 7rem 2rem;
+
+    max-width: 71rem;
+  }
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  .projetos__container{
+    padding: 0 9.5rem 2rem;
+
+    max-width: 80rem;
+ }
+
+}
+
+
+/* --- fim ;) */

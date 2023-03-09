@@ -1,19 +1,19 @@
 /*
-  a configuração CSS dos componentes do "header"
-  serão exportadas para o arquivo "header.css"
+  a configuração CSS dos componentes do "header-nav"
+  serão exportadas para o arquivo "header-nav.css"
  */
 
 /* mobile */
 
-.header__item {
+.nav__item {
   display: none;
 }
 
-.header__item--single {
+.nav__item--single {
   display: flex;
 }
 
-.header__item__link {
+.nav__item__link {
   font-size: 0.875rem;
 }
 
@@ -21,11 +21,11 @@
 
 @media screen and (min-width:764px) {
 
-  .header__item--single {
+  .nav__item--single {
     font-weight: 700;
   }
 
-  .header__item__link {
+  .nav__item__link {
     font-size: 1rem;
   }
 
@@ -35,7 +35,7 @@
 
 @media screen and (min-width:1024px) {
 
-  .header__item {
+  .nav__item {
     display: flex;
 
     font-weight: 500;
@@ -49,7 +49,7 @@
 
 @media screen and (min-width:1040px) {
 
-  .header__item {
+  .nav__item {
     margin-right: 2rem;
   }
 

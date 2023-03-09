@@ -5,11 +5,14 @@
   facilitando a importação dos estilos no documento HTML.
 */
 
-@import url(../css/formacao/);
-@import url(../css/formacao/);
-@import url(../css/formacao/);
-@import url(../css/formacao/);
-@import url(../css/formacao/);
+@import url(../css/formacao/formacao__container.css);
+@import url(../css/formacao/formacao__titulo.css);
+@import url(../css/formacao/formacao__lista.css);
+@import url(../css/formacao/formacao__item.css);
+@import url(../css/formacao/formacao__logo__container.css);
+@import url(../css/formacao/formacao__logo.css);
+@import url(../css/formacao/formacao__nome.css);
+@import url(../css/formacao/formacao__texto.css);
 
 
 /* --- fim ;) */

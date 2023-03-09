@@ -1,0 +1,83 @@
+/*
+  a configuração CSS dos componentes do "hobbies"
+  serão exportadas para o arquivo "hobbies.css"
+ */
+
+/* mobile */
+
+.hobbies__item{
+  background-color: var(--branco);
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-top: 2rem;
+
+  height: 7.375rem;
+  width: 47.5%;
+}
+
+.hobbies__item--soft {
+  background-color: var(--branco);
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  box-sizing: border-box;
+  padding: 1rem;
+  margin-top: 2rem;
+
+  height: 7.375rem;
+  width: 100%;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  .hobbies__item{
+    height: 7.375rem;
+    width: 31.82%;
+  }
+
+  .hobbies__item--soft{
+    width: 31.82%;
+  }
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  .hobbies__item{
+    margin-left: 0;
+  }
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  .hobbies__item{
+    height: 7.375rem;
+    width: 11rem;
+    min-width: 15.3%;
+  }
+
+  .hobbies__item--soft{
+    width: 47rem;
+    min-width: 66.2%;
+  }
+
+}
+
+
+/* --- fim ;) */

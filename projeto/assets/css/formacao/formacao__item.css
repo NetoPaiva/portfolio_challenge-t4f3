@@ -1,0 +1,47 @@
+/*
+  a configuração CSS dos componentes do "formacao"
+  serão exportadas para o arquivo "formacao.css"
+ */
+
+/* mobile */
+
+.formacao__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  width: 100%;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  .formacao__item{
+    width: 31.82%;
+  }
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  /* sem alterações */
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  .formacao__item{
+    height: 17.875rem;
+    width: 32.3%;
+    min-width: 32.3%;
+  }
+
+}
+
+
+/* --- fim ;) */

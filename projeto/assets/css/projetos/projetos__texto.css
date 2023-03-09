@@ -1,0 +1,42 @@
+/*
+  a configuração CSS dos componentes do "projetos"
+  serão exportadas para o arquivo "projetos.css"
+ */
+
+/* mobile */
+
+.projetos__texto{
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  /* semalterações */
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  /* semalterações */
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  /* semalterações */
+
+}
+
+
+/* --- fim ;) */
