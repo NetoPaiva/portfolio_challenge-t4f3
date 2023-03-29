@@ -1,0 +1,41 @@
+/*
+  a configuração CSS dos componentes do "formulário"
+  serão exportadas para o arquivo "formulario.css"
+ */
+
+/* mobile */
+
+.formulario__fildset{
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  /* gap: 2rem; */
+  /* margin-bottom: 2rem; */
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  
+
+}
+
+
+/* --- fim ;) */

@@ -1,0 +1,49 @@
+/*
+  a configuração CSS dos componentes do "formulário"
+  serão exportadas para o arquivo "formulario.css"
+ */
+
+/* mobile */
+
+.input__label{
+  font-weight: 400;
+  color: var(--cinza50);
+
+  position: relative;
+  top: -1.95rem;
+  left: 0.75rem;
+  margin: 0;
+  padding: 0;
+  
+
+  transition: all .25s;
+  
+  
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  
+
+}
+
+
+/* --- fim ;) */

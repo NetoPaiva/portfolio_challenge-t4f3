@@ -1,0 +1,44 @@
+/*
+  a configuração CSS dos componentes do "contato"
+  serão exportadas para o arquivo "contato.css"
+ */
+
+/* mobile */
+
+.contato__container{
+  background-color: var(--azul10);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 2rem;
+  width: 100vw;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  
+
+}
+
+
+/* --- fim ;) */

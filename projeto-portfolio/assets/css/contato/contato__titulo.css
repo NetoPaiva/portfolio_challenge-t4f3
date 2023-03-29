@@ -1,0 +1,39 @@
+/*
+  a configuração CSS dos componentes do "contato"
+  serão exportadas para o arquivo "contato.css"
+ */
+
+/* mobile */
+
+.contato__titulo{
+  font-size: 1.375rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+
+
+}
+
+
+/* --- fim ;) */

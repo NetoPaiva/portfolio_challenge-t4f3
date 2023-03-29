@@ -1,0 +1,68 @@
+/*
+  a configuração CSS dos componentes do "formulário"
+  serão exportadas para o arquivo "formulario.css"
+ */
+
+/* mobile */
+
+.input__container{
+  display: flex;
+  flex-direction: column;
+  align-items:stretch;
+  justify-content: flex-end;
+
+  font-weight: 400;
+  color: var(--cinza50);
+
+  position: relative;
+  margin-bottom: 2rem;
+  box-sizing: border-box;
+
+  /* height: 3.5rem; */
+  /* width: 100%; */
+
+  background-color: blue;
+}
+/* 
+.input__container{
+  display: flex;
+  flex-direction: column;
+  align-items:stretch;
+
+  font-weight: 400;
+  color: var(--cinza50);
+
+  position: relative;
+
+  height: 3.5rem;
+  width: 100%;
+
+  background-color: blue;
+} */
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  
+
+}
+
+
+/* --- fim ;) */
