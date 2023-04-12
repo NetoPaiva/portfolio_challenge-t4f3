@@ -1,0 +1,16 @@
+/* 
+  este arquivo reune todos os componentes do elemento "skills",
+  que foram definidos em arquivos CSS específicos
+  e orgnizados na pasta "assets/css/skills",
+  facilitando a importação dos estilos no documento HTML.
+*/
+
+@import url(./skills__container.css);
+@import url(./skills__titulo.css);
+@import url(./skills__lista.css);
+@import url(./skills__item.css);
+@import url(./skills__icone.css);
+@import url(./skills__nome.css);
+
+
+/* --- fim ;) */

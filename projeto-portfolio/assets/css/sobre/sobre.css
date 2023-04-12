@@ -1,0 +1,14 @@
+/* 
+  este arquivo reune todos os componentes do elemento "sobre",
+  que foram definidos em arquivos CSS específicos
+  e orgnizados na pasta "assets/css/sobre",
+  facilitando a importação dos estilos no documento HTML.
+*/
+
+@import url(./sobre__container.css);
+@import url(./sobre__titulo.css);
+@import url(./sobre__texto.css);
+@import url(./sobre__imagem.css);
+
+
+/* --- fim ;) */

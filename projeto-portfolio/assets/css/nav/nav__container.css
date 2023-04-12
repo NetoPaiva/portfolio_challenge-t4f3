@@ -1,6 +1,6 @@
 /*
   a configuração CSS dos componentes do "header-nav"
-  serão exportadas para o arquivo "header-nav.css"
+  serão exportadas para o arquivo "assets/css/nav/nav.css"
  */
 
 /* mobile */
@@ -24,20 +24,20 @@
     padding: 1rem 2rem;
   }
 
- }
+}
 
 /* laptop */
 
 @media screen and (min-width:1024px) {
- 
-   .nav__container{
-     margin: auto;
-     padding: 2rem 7rem;
 
-     max-width: 71rem;
-   }
+  .nav__container{
+    margin: auto;
+    padding: 2rem 7rem;
 
- }
+    max-width: 71rem;
+  }
+
+}
 
  /* desktop */
 

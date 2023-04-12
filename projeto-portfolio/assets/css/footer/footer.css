@@ -1,0 +1,13 @@
+/* 
+  este arquivo reune todos os componentes do elemento "footer",
+  que foram definidos em arquivos CSS específicos
+  e orgnizados na pasta "assets/css/footer",
+  facilitando a importação dos estilos no documento HTML.
+*/
+
+@import url(./footer__container.css);
+@import url(./footer__autor.css);
+@import url(./footer__date.css);
+
+
+/* --- fim ;) */

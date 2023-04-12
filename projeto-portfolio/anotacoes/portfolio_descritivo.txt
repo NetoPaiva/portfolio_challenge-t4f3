@@ -154,7 +154,7 @@
   - criar arquivo "aside.css" na pasta "assets/css"
   - criar arquivos CSS para cada componente do elemento "aside"
     - organizados na pasta "assets/css/aside"
-  - impostar cada componente para o arquivo "aside.css"
+  - importar cada componente para o arquivo "aside.css"
   - vincular arquivo "aside.css" no documento HTML
 
   - caracterísitcas dos componentes
@@ -195,7 +195,7 @@
   - criar arquivo "sobre.css" na pasta "assets/css"
   - criar arquivos CSS para cada componente do elemento "sobre"
     - organizados na pasta "assets/css/sobre"
-  - impostar cada componente para o arquivo "sobre.css"
+  - importar cada componente para o arquivo "sobre.css"
   - vincular arquivo "sobre.css" no documento HTML
 
   - caracterísitcas dos componentes
@@ -265,7 +265,7 @@
   - criar arquivo "sobre.css" na pasta "skills/css"
   - criar arquivos CSS para cada componente do elemento "skills"
   - organizados na pasta "assets/css/skills"
-  - impostar cada componente para o arquivo "skills.css"
+  - importar cada componente para o arquivo "skills.css"
   - vincular arquivo "skills.css" no documento HTML
 
   - caracterísitcas dos componentes
@@ -335,7 +335,7 @@
   - criar arquivo "sobre.css" na pasta "hobbies/css"
   - criar arquivos CSS para cada componente do elemento "hobbies"
   - organizados na pasta "assets/css/hobbies"
-  - impostar cada componente para o arquivo "hobbies.css"
+  - importar cada componente para o arquivo "hobbies.css"
   - vincular arquivo "hobbies.css" no documento HTML
 
   - caracterísitcas dos componentes
@@ -403,7 +403,7 @@
   - criar arquivo "sobre.css" na pasta "formacao/css"
   - criar arquivos CSS para cada componente do elemento "formacao"
   - organizados na pasta "assets/css/formacao"
-  - impostar cada componente para o arquivo "formacao.css"
+  - importar cada componente para o arquivo "formacao.css"
   - vincular arquivo "formacao.css" no documento HTML
 
   - caracterísitcas dos componentes
@@ -487,7 +487,7 @@ section.projetos__container>h2.projetos__titulo+ul.projetos__lista>(li.projetos_
   - criar arquivo "sobre.css" na pasta "projetos/css"
   - criar arquivos CSS para cada componente do elemento "projetos"
   - organizados na pasta "assets/css/projetos"
-  - impostar cada componente para o arquivo "projetos.css"
+  - importar cada componente para o arquivo "projetos.css"
   - vincular arquivo "projetos.css" no documento HTML
 
   - caracterísitcas dos componentes
@@ -504,8 +504,6 @@ section.projetos__container>h2.projetos__titulo+ul.projetos__lista>(li.projetos_
 #### Criar seção "Conato"
 
 
-# REFAZER ESTRUTURA HTML DO FORMULÁRIO
-
 tag <form>
 
   rever aulas de validação de formulário
@@ -515,113 +513,161 @@ tag <form>
     - classes
     - atributos e propriedades
     - data-attributes
+    - validação HTMl e JS
 
 
-Esquema da nova estrutura HTML do Contato/formulário
+Esquema revisto da nova estrutura HTML do Contato/formulário
 
   section.contato__container>
-    img.contato__imagem+
-    (div.contato__container--interno>
-      h2.contato__titulo+
-      p.contato__texto)+
-    (div.formulario__container>
-      form.formulario__form>
-        (fildeset.formulario__fildset>
-          (div.input__container>
-            input.input__campo.input__nome+
-            label.input__label+
-            span.input__span)*3+
-          (div.input__container>
-            textarea.input__campo.input__mensagem+
-            label.input__label+
-            span.input__span))+
-        button.formulario__botao.botao__primario)
+    div.contato__imagem+
+    div.contato__container--interno>
+      (div.contato__container--textos>
+        h2.contato__titulo+
+        p.contato__texto)+
+      (form.formulario__container>
+          (fieldset.formulario__fildset>
+            (div.input__container>
+              input.input__campo.input__nome+
+              label.input__label+
+              span.input__erro)*3+
+            (div.input__container>
+              textarea.input__campo.input__mensagem+
+              label.input__label+
+              span.input__erro))+
+          button.formulario__botao.botao__primario)
 
 Nova sintaxe Emmet
 
-  section.contato__container>img.contato__imagem+(div.contato__container--interno>h2.contato__titulo+p.contato__texto)+(div.formulario__container>form.formulario__form>(fildeset.formulario__fildset>(div.input__container>input.input__campo.input__nome+label.input__label+span.input__span)*3+(div.input__container>textarea.input__campo.input__mensagem+label.input__label+span.input__span))+button.formulario__botao.botao__primario)
+  section.contato__container>div.contato__imagem+div.contato__container--interno>(div.contato__container--textos>h2.contato__titulo+p.contato__texto)+(form.formulario__container>(fieldset.formulario__fildset>(div.input__container>input.input__campo.input__nome+label.input__label+span.input__erro)*3+(div.input__container>textarea.input__campo.input__mensagem+label.input__label+span.input__erro))+button.formulario__botao.botao__primario)
 
-  Nova estrutura criada
+Nova estrutura criada
 
   <section class="contato__container">
-      <img src="" alt="" class="contato__imagem">
-      <div class="contato__container--interno">
+    <div class="contato__imagem"></div>
+    <div class="contato__container--interno">
+      <div class="contato__container--textos">
         <h2 class="contato__titulo"></h2>
         <p class="contato__texto"></p>
       </div>
-      <div class="formulario__container">
-        <form action="" class="formulario__form">
-          <fildeset class="formulario__fildset">
-            <div class="input__container">
-              <input type="text" class="input__campo input__nome">
-              <label for="" class="input__label"></label>
-              <span class="input__span"></span>
-            </div>
-            <div class="input__container">
-              <input type="text" class="input__campo input__nome">
-              <label for="" class="input__label"></label>
-              <span class="input__span"></span>
-            </div>
-            <div class="input__container">
-              <input type="text" class="input__campo input__nome">
-              <label for="" class="input__label"></label>
-              <span class="input__span"></span>
-            </div>
-            <div class="input__container">
-              <textarea name="" id="" cols="30" rows="10" class="input__campo input__mensagem"></textarea>
-              <label for="" class="input__label"></label>
-              <span class="input__span"></span>
-            </div>
-          </fildeset>
-          <button class="formulario__botao botao__primario"></button>
-        </form>
-      </div>
+      <form action="" class="formulario__container">
+        <fieldset class="formulario__fildset">
+          <div class="input__container">
+            <input type="text" class="input__campo input__nome">
+            <label for="" class="input__label"></label>
+            <span class="input__erro"></span>
+          </div>
+          <div class="input__container">
+            <input type="text" class="input__campo input__nome">
+            <label for="" class="input__label"></label>
+            <span class="input__erro"></span>
+          </div>
+          <div class="input__container">
+            <input type="text" class="input__campo input__nome">
+            <label for="" class="input__label"></label>
+            <span class="input__erro"></span>
+          </div>
+          <div class="input__container">
+            <textarea name="" id="" cols="30" rows="10" class="input__campo input__mensagem"></textarea>
+            <label for="" class="input__label"></label>
+            <span class="input__erro"></span>
+          </div>
+        </fieldset>
+        <button class="formulario__botao botao__primario"></button>
+      </form>
+    </div>
   </section>
 
   - adicionar informações aos elementos
-  - caminho e alt da imagem
   - título e parágrafos
   - campos do formulário
   - os modificadores para cada campo
+  - seletor "data-attributes" em cada campo
   - botão de enviar
 
 
-Estrutura HTML editada com as iformações adicionadas
+Estrutura HTML final com as iformações adicionadas
 
-  <section class="contato__container">
-    <img src="./assets/imagens/contato_imagem.png" alt="Foto de um telefone antigo" class="contato__imagem">
+  <section class="contato__container" id="contato">
+
+    <div class="contato__imagem" alt="imagem ilustrativa da área de contato, detalhe do teclado do computador"></div>
+
     <div class="contato__container--interno">
-      <h2 class="contato__titulo">Contato</h2>
-      <p class="contato__texto">Quer entrar em contato comigo? Preencha o formulário abaixo e entrarei em contato o mais
-          rápido possível</p>
-    </div>
-    <div class="formulario__container">
-      <form action="" class="formulario__form">
-        <fildeset class="formulario__fildset">
-          <div class="input__container">
-            <input class="input__campo input__nome" name="nome" type="text" placeholder="Nome"
-              title="Digite aqui seu nome" data-form="nome" required>
-            <span class="input__span"></span>
-          </div>
-          <div class="input__container">
-            <input class="input__campo input__email" name="email" type="text" placeholder="E-mail"
-              title="Digite aqui seu e-mail" data-form="email" required>
-            <span class="input__span"></span>
-          </div>
-          <div class="input__container">
-            <input class="input__campo input__assunto" name="assunto" type="text" placeholder="Assunto"
-              title="Digite aqui o assunto da mensagem" data-form="assunto" required>
-            <span class="input__span"></span>
-          </div>
-          <div class="input__container">
-            <textarea class="input__campo input__mensagem" name="mensagem" cols="30" rows="10" placeholder="Mensagem"
-              title="Digite aqui sua mensagem" data-form="mensagem" required></textarea>
-            <span class="input__span"></span>
-          </div>
-        </fildeset>
-        <button class="formulario__botao botao__primario">Enviar mensagem</button>
+
+      <div class="contato__container--textos">
+        <h2 class="contato__titulo">
+          <a href="#nav" title="Clique aqui para voltar ao topo da página">Contato</a>
+        </h2>
+        <p class="contato__texto">Quer entrar em contato comigo? Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</p>
+      </div>
+
+      <form action="" class="formulario__container">
+
+        <fieldset class="formulario__fieldset">
+
+          <div class="input__container"> <!-- campo nome -->
+
+            <input class="input__campo input__nome" data-form="nome" name="nome" type="text" placeholder="Nome" title="Digite seu nome" minlength="9" required>
+
+            <label class="input__label" data-label="nome" for="Nome">
+              Nome
+            </label>
+
+            <span class="input__erro" data-span="nome">
+              Favor preencher com seu nome completo.
+            </span>
+
+          </div> <!-- fecha campo nome -->
+
+          <div class="input__container"> <!-- campo email -->
+
+            <input class="input__campo input__email" data-form="email" name="email" type="email" placeholder="E-mail" title="Digite seu e-mail" required>
+
+            <label class="input__label" data-label="email" for="E-mail">
+              E-mail
+            </label>
+
+            <span class="input__erro" data-span="email">
+              Favor preencher com seu email válido.
+            </span>
+
+          </div> <!-- fecha campo email -->
+
+          <div class="input__container"> <!-- campo assunto -->
+
+            <input class="input__campo input__assunto" data-form="assunto" name="assunto" type="text" minlength="10" placeholder="Assunto" title="Digite o assunto da mensagem" required>
+
+            <label class="input__label" data-label="assunto" for="Assunto">
+              Assunto
+            </label>
+
+            <span class="input__erro" data-span="assunto">
+              Favor descrever qual o assunto.
+            </span>
+
+          </div> <!-- fecha campo assunto -->
+
+          <div class="input__container"> <!-- campo mensagem -->
+
+            <textarea class="input__campo input__mensagem" data-form="mensagem" name="mensagem" minlength="50" maxlength="300" cols="" rows="" placeholder="Mensagem" title="Digite sua mensagem, máximo de 300 caracteres." required></textarea>
+
+            <label class="input__label" data-label="mensagem" for="Mensagem">
+              Mensagem
+            </label>
+
+            <span class="input__erro" data-span="mensagem">
+              Favor escrever sua mensagem com mínimo de 50 caracteres e máximo de 300.
+            </span>
+
+          </div> <!-- fecha campo mensagem -->
+
+        </fieldset>
+
+        <button class="formulario__botao botao__primario" data-btn="botao" title="Clique para enviar a mensagem">Enviar mensagem</button>
+
       </form>
+
     </div>
+
   </section>
 
 
@@ -630,15 +676,106 @@ Estrutura HTML editada com as iformações adicionadas
   - criar arquivo "contato.css" na pasta "projetos/contato"
   - criar arquivos CSS para cada componente do elemento "contato"
   - organizados na pasta "assets/css/contato"
-  - impostar cada componente para o arquivo "contato.css"
+  - importar cada componente para o arquivo "contato.css"
   - vincular arquivo "contato.css" no documento HTML
-
+  
+  - criar arquivo "formulario.css" na pasta "projetos/formulario"
+  - criar arquivos CSS para cada componente do elemento "formulario"
+  - organizados na pasta "assets/css/formulario"
+  - importar cada componente para o arquivo "formulario.css"
+  - vincular arquivo "formulario.css" no documento HTML
+  
   - caracterísitcas dos componentes
   - título e texto alinhados à esquerda
   - ajustar tamanho da imagem
   - ajustar espaçamentos e margens
   - exibir imagem apenas em laptop/desktop
+
+
+### Validação do formulário
+
+  - verificar condição válida do campo
+  - combinação entre HTMl e JS
+  - exibir/ocultar classe CSS de erro
+
+
+#### Validação HTML
+
+Todos os campos
+  - required
+
+Campo "nome"
+  - input
+  - name="nome"
+  - type="text"
+  - minlength="5"
   
+  Campo "email"
+  - input
+  - name="email"
+  - type="email"
+  
+
+Campo "assunto"
+  - input
+  - name="assunto"
+  - type="text"
+  - minlength="10"
+
+Campo "mensagem"
+  - textarea
+  - name="mensagem"
+  - minlength="50"
+  - maxlength="300"
+
+
+#### Validação JS
+
+  Receber todos os campos do formulário
+    - seletor "data-attributes"
+    - armazenar em uma constante
+    const cadaCampo = document.querySelectorAll('[data-form]');
+  
+  Detectar qual campo está em foco
+    cadaCampo.forEach(campo => {
+      campo.addEventListener('blur', evento => {
+        validaCampo(evento.target);
+      });
+    });
+
+  Validar campo
+
+    - função para verificar conteúdo do campo
+    - exibir mensagem de erro se inválido
+
+    function validaCampo(campo){
+      if(campo.validity.valid){
+        campo.parentElement.classList.remove('input__container--invalido');
+      } else {
+        campo.parentElement.classList.add('input__container--invalido');
+      }
+    }
+
+    - com opção para armazenar dados
+      - nome do campo
+        // let nomeCampo = (campo.name);
+      - conteúdo do campo
+        // let conteudo = (campo.value);
+
+
+  - Exportar função "validaCampo"
+  - Importar função "validaCampo" no arquivo "validar.js"
+  - Vincular JS tipo módulo no documento HTML
+    - src="validar.js"
+    - type="module"
+
+
+#### Enviar dados do formulário
+
+  - Serviço de envio de formulário "Formsubmit"
+  - inlcuir funcionalidades de envio (input hidden)
+  - criar página de agradecimento pelo contato
+
 
 -------------------------------------------------
 
@@ -672,7 +809,7 @@ Estrutura HTML editada com as iformações adicionadas
   - criar arquivo "sobre.css" na pasta "projetos/rodape"
   - criar arquivos CSS para cada componente do elemento "rodape"
   - organizados na pasta "assets/css/rodape"
-  - impostar cada componente para o arquivo "rodape.css"
+  - importar cada componente para o arquivo "rodape.css"
   - vincular arquivo "rodape.css" no documento HTML
 
   - caracterísitcas dos componentes
@@ -690,6 +827,31 @@ Estrutura HTML editada com as iformações adicionadas
   - estrutura HTML do formulário
   - validação do formulário (HTML/JS)
   - estilização do formulário (CSS/JS)
+  - incluir "id" âncora nas "sections" e "nav"
+
+
+## Publicar no GitHub
+
+  - fazer commit do projeto
+  - na página do repositŕio no GitHub
+    - clicar em "settings"
+    - no menu esquerdo clicar em "pages"
+    - selecionar "Branch/none" para "main" e salvar
+    - irá gerar o link do GitHub Pages
+    https://netopaiva.github.io/challenge-portfolio/
+
+
+## Revisão após publicação
+
+  - refatoração do formulário
+  - verificar funcionalidades após publicação
+  - corrigir JS (export function)
+  - incluir links dos projetos (repositório e página)
+  - commit final
+  - finalizar entrega (formulário Alura)
+  - publicar entrega (linkedIn)
+  - celebrar!!!
+
 
 
 

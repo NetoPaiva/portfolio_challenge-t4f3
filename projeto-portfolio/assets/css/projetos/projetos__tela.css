@@ -1,6 +1,6 @@
 /*
   a configuração CSS dos componentes do "projetos"
-  serão exportadas para o arquivo "projetos.css"
+  serão exportadas para o arquivo "assets/css/projetos/projetos.css"
  */
 
 /* mobile */
@@ -36,8 +36,8 @@
   width: 50vw;
 }
 
-.projetos__tela.single{
-  margin: 0;
+.projetos__tela.right{
+  margin-right: 0;
 }
 
 }
@@ -57,7 +57,7 @@
 @media screen and (min-width:1450px) {
 
   .projetos__tela{
-     max-width: 47rem;
+    max-width: 47rem;
   }
 
 }

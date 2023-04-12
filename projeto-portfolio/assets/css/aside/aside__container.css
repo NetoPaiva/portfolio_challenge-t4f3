@@ -1,46 +1,46 @@
 /*
   a configuração CSS dos componentes do "aside"
-  serão exportadas para o arquivo "aside.css"
+  serão exportadas para o arquivo "assets/css/aside/aside.css"
  */
 
 /* mobile */
 
-.aside__container{
-   padding: 1rem;
+.aside__container {
+  padding: 1rem;
 }
 
 /* tablete */
 
-@media screen and (min-width:768px){
+@media screen and (min-width:768px) {
 
-   .aside__container{
-     display: flex;
-     flex-direction: row-reverse;
-     justify-content: space-between;
-     
-     padding: 2rem;
-   }
+  .aside__container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 
- }
+    padding: 2rem;
+  }
+
+}
 
 /* laptop */
 
 @media screen and (min-width:1024px) {
- 
-   .aside__container{
-     padding: 2rem 7rem;
-     margin: auto;
 
-     max-width: 71rem;
-   }
+  .aside__container {
+    padding: 2rem 7rem;
+    margin: auto;
 
- }
+    max-width: 71rem;
+  }
+
+}
 
 /* desktop */
 
 @media screen and (min-width:1440px) {
-  
-  .aside__container{
+
+  .aside__container {
     padding: 0 9.5rem;
 
     max-width: 80rem;
@@ -48,4 +48,4 @@
 
 }
 
- /* --- fim ;) */
+/* --- fim ;) */

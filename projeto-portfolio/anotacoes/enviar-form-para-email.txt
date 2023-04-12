@@ -1,0 +1,46 @@
+Enviar formulário por email
+com serviço "https://formsubmit.co"
+
+Fonte: https://youtu.be/NVc_xY_dP-M
+
+Envio de formulário por email sem programar back-end
+
+Adicionar na tag "form" do HTML
+
+  - action="https://formsubmit.co/email de recebimento"
+  - method="post"
+
+Validar primeiro envio
+  - plataforma exige verificação do endereço no primeiro envio
+  - recebe confirmação dde envio na caixa postal cadastrada
+    - com máscara para ocultar endereço de email
+  - envio estará ativo / recebimento está OK
+
+Para enviar email de resposta ao usuário
+  - ter no formulário um campo "email" com type="email"
+
+Filtro contra spam
+  - captcha
+  - pode ser desativado
+  - recomadável deixar ativado
+
+Página de agradecimento
+  - exibida após envio do formulário
+  - criar página no projeto
+
+  Configurar página de agradecimento
+  - criar um novo campo no formulário (input)
+  - tipo invisível
+  - nome "_next"
+  - valor com o link da página de agradecimento
+
+  <input type="hidden" name="_next" value="https://netopaiva.github.io/challenge-portfolio/agradecimento.html">
+
+Configurar email do usuário para receber cópia do Envio
+  - criar novo campo input
+  - tipo invisível
+  - nome "_autoresponse"
+  - valor com mensagem de resposta
+
+  <input type="hidden" name="_autoresponse" value="Agradeço por entrar em contato. Recebi sua mensagem enviada pelo formulário de contato em meu Portfolio. Em breve responderei. Abs e bons projetos!!">
+

@@ -1,6 +1,6 @@
 /*
   a configuração CSS dos componentes do "contato"
-  serão exportadas para o arquivo "contato.css"
+  serão exportadas para o arquivo "assets/css/contato/contato.css"
  */
 
 /* mobile */
@@ -8,9 +8,10 @@
 .contato__container{
   background-color: var(--azul10);
   box-sizing: border-box;
+
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 
   padding: 2rem;
   width: 100vw;
@@ -28,6 +29,16 @@
 
 @media screen and (min-width:1024px) {
 
+  .contato__container{
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin: auto;
+    padding: 4rem 7rem;
+
+    /* max-width: 71rem; */
+  }
 
 
 }
@@ -36,7 +47,28 @@
 
 @media screen and (min-width:1440px) {
 
-  
+    .contato__container{
+      padding: 4rem 9.5rem;
+
+      width: 100vw;
+
+      /* max-width: 80rem; */
+  }
+
+}
+
+/* telas maiores */
+
+@media screen and (min-width:1450px) {
+
+    .contato__container{
+      margin: auto;
+      padding: 4rem 9.5rem;
+
+      width: 100%;
+
+      /* max-width: 80rem; */
+  }
 
 }
 

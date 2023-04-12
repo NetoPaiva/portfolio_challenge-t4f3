@@ -1,0 +1,19 @@
+/* 
+  este arquivo reune os componentes da seção "contato",
+  que foram definidos em arquivos CSS específicos
+  e orgnizados na pasta "assets/css/contato",
+  facilitando a importação dos estilos no documento HTML.
+
+  Também da seção "contato", os componentes do elemento "formulário" foram organizados em pasta específica,
+  "assets/css/formulario", para manter melhor organização.
+*/
+
+@import url(./contato__container.css);
+@import url(./contato__imagem.css);
+@import url(./contato__container--interno.css);
+@import url(./contato__container--textos.css);
+@import url(./contato__titulo.css);
+@import url(./contato__texto.css);
+
+
+/* --- fim ;) */

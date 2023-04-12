@@ -1,6 +1,6 @@
 /*
   a configuração CSS dos componentes do "projetos"
-  serão exportadas para o arquivo "projetos.css"
+  serão exportadas para o arquivo "assets/css/projetos/projetos.css"
  */
 
 /* mobile */
@@ -43,7 +43,7 @@
     padding: 0 9.5rem 2rem;
 
     max-width: 80rem;
- }
+}
 
 }
 

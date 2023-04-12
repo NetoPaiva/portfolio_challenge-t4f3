@@ -1,0 +1,352 @@
+# Cópia das anotações da aula "customizar mensagens"
+
+Anotações do curso
+
+# JS - Validar Formulário
+
+
+## Aula 3 - Customizar mensagem
+
+### Parte 3/1 - Live Sever e Browser Sync
+
+Vincular novo arquivo JS no documento HTML
+  "projeto/js/app.js"
+
+  - testar no navegador
+    - não validou
+  - abrir console e inspecionar elemento
+
+  - declarar no HTML o script com tipo módulo
+    <script src="./js/app.js" type="module"></script>
+
+  Tipo módulo e questão de segurança
+    - navegador bloqueia tipo módulo por questões de segurança
+      CORS
+    - requisição http
+    - carregar página no modo servidor
+      - live server (via VS Code)
+      - browser sync (instalar)
+      - ambos necessitam do NodeJS instalado
+
+Instalar Browser Sync
+  - node e npm já instalados
+  - abrir terminal (pode ser do VS Code)
+  - digitar o comando de instalação gobla (-g)
+    sudo npm install -g browser-sync
+
+Abrir projeto com Browser Sync
+  - pelo terminal
+  - entrar na raiz do projeto
+  - digitar o comando para iniciar o Browser Sync
+    - informando para abrir um servidor (-s)
+    - e checar por arquivos do projeto (-f)
+    - verificar todos os arquivos (.)
+    - abrir a raiz do projeto no navegador (--directory) 
+    browser-sync start -s -f . --directory
+
+  - subiu aplicação pela porta 3000
+    - exibe na página do navegaqdor pastas e arquivo do projeto
+    - clicar no item para abrir em nova página no navegador
+    - roda as funcionalidades JS do tipo módulo.
+
+
+### Parte 3/2 - Mostrar mensagem de erro
+
+  - caso preenchimento do formulário tenha algum erro
+  - exibir mensagem de erro
+
+Configurando mensagem de erro
+
+  Arquivo CSS
+    - já possui estilização para mensagens de erro
+
+  Exibir mensagem de erro no navegador
+    - inlcuir seletor CSS nas tags HTML
+      - inclusão manual (HTML)
+      - inclusão automática (JS) 
+
+  Modo manual/individualizado
+      - na tag HTML dos campos do formulário
+      - adicionar nova classe
+        input-container--invalido
+      - exibe mensagem e visual do campo no navegador
+
+  Modo automatizado
+    - criar função JS
+    - fará navegador verificar
+    - se existir erro 
+      - adiciona classe no elemento
+      - exibe mensagem / altera layout
+
+  Inspecionar no navegador o elemento do campo "nome"
+    - é do tipo input
+    - tem a propriedade validity
+
+    - chamar a propriedade validity
+      - tem um objeto
+    - este objeto tem diversos valores
+      - mensagens de erro
+    - opção "valid"
+      - se o campo não for válido (false)
+    - o campo "nome" tem o atributo "required"
+      - precisa ser preenchido
+      - se estiver em branco
+        - valor será falso
+
+  Lógica da exibição da mensagem de erro
+    - utilizar a propriedade "validity" do objeto
+      - verificar o estado do objeto
+      - se verdadeiro (preenchido)
+        - esconder classe do erro
+      - se falso (sem preenchimento)
+        - mostrar classe do erro (container inválido)
+    
+    - estrutura HTML
+      - div do input é pai do elemento input
+      - permite trabalhar com elemento pai para aleterar filho
+        - remove classe se verdadeiro
+        - adiciona classe se falso
+
+Criar lógica de verificação
+
+  - no arquivo "validacao.js"
+  - adcionar uma condição na função "valida"
+    - se dentro do input o objeto "validity" estiver como "true"
+    if (input.validity.valid){ ... }
+
+    - irá remover a classe do input inválido
+      {input.parentElement.classList.remove('input-container--invalido')}
+
+    - caso contrário adicionar a classe do input invalido
+      - selecionar o elemento pai para adicionar no filho
+    else {
+      input.parentElement.classList.add('input-container--invalido')
+    }
+
+  Sintaxe completa da verificação
+
+    if(input.validity.valid) {
+      input.parentElement.classList.remove('input-container--invalido');
+    } else {
+      input.parentElement.classList.add('input-container--invalido');
+    }
+
+  - resultado
+    - se não for válido
+      - campo ficará com borda vermelha
+      - aparece mensagem de erro
+    - se for válido
+      - não muda layout
+      - não aparece mensagem
+
+Editar a mensagem de erro
+  - arquivo "validacao.js"
+  - criar objeto para receber mensagem
+    const mensagensDeErro { };
+  
+  Criar mensagens de erro para cada campo do formulário
+
+    - criar no objeto uma camada para cada campo
+      - criar um objeto para cada campo
+      nome: {},
+      email: {},
+      senha: {},
+      dataNascimento: {}
+
+    - declarar dentro deste objeto "nome"
+      - os tipos de erro
+      - as mensagens
+
+  - tipos de erro
+
+    valueMissing (preenchido ou não)
+    - pra todos os campos
+    - mensagem: "o campo "tal" não pode estar vazio"
+      {valueMissing: 'O campo tal não pode estar vazio.'},
+
+    typeMismatch (tipo de informação)
+    - para campo email
+    - mensagem "o email digitado não é válido"
+      {typeMismatch: 'O email digitado não é válido.'},
+
+    patternMismatch (tipo de padrão)
+    - para campo senha
+    - mensagem patternMismatch: 'A senha deve conter entre 6 e 12 caracteres, ao menos 1 maiúscula e 1 minúscula e 1 número, sem caracteres especiais.'
+
+    customError (criar para o verificação de idade)
+    - para o campo data de nascimento
+    - mensagem "cadastro apenas para maiores de 18 anos."
+
+  Sintaxe completa do objeto da mensagem de erro
+
+    const mensagensDeErro = {
+      nome: {
+        valueMissing: 'O campo nome não pode estar vazio.'
+      },
+      email: {
+        valueMissing: 'O campo email não pode estar vazio.',
+        typeMismatch: 'O email digitado não é válido.'
+      },
+      senha: {
+        valueMissing: 'O campo senha não pode estar vazio.',
+        patternMismatch: 'A senha deve conter entre 6 e 12 caracteres, ao menos 1 maiúscula e 1 minúscula e 1 número, sem caracteres especiais.'
+      },
+      dataNascimento: {
+        valueMissing: 'O campo data de nascimento não pode estar vazio',
+        customError: 'Você deve ser maior de 18 anos para se cadastrar.'
+      }
+    }
+
+- Falta vincular mensagens no documento HTML para exibir no navegador
+  - utilizar seletores JS (data-attributes) para cada campo
+  - exibir mensagem para cada campo
+
+
+### Parte 3/3 - Customizar mensagem de erro
+
+  - Mostrar as mensagens de erro no navegador
+  - alterar valor da tag "spam" (innerHTML)
+  - realizar junto com a verificação e exibição de campo inválido
+
+Estrutura da ação
+  - buscar o elemento pai
+    input.parentElement
+
+  - buscar a tag "spam" pela classe
+    querySelector('.input-mensagem-erro')
+
+  - alterar o valor
+    - se input válido 
+      - para mensagem vazia
+    innerHTML = '';
+    - se input inválido
+      -  função para alterar a classe e mostrar mensagem de erro
+
+  Sintaxe completa da declaração
+
+    - se campo válido (if)
+    - mensagem vazia
+    input.parentElement.querySelector('.input-mensagem-erro').innerHTML = '';
+
+    - se campo inválido (else)
+    - exibe mensagem de erro
+    input.parentElement.querySelector('.input-mensagem-erro').innerHTML = mostraMensagemDeErro(tipoDeInput, input);
+
+  Sintaxe completa e atualizada da verificação e exibição de campo inválido
+
+    if(input.validity.valid) {
+      input.parentElement.classList.remove('input-container--invalido');
+      input.parentElement.querySelector('.input-mensagem-erro').innerHTML = '';
+    } else {
+      input.parentElement.classList.add('input-container--invalido');
+      input.parentElement.querySelector('.input-mensagem-erro').innerHTML = mostraMensagemDeErro(tipoDeInput, input);
+    }
+
+
+Função para exibir mensagem de erro
+
+  - declarar antes da função "validaDataNascimento"
+    mostraMensagemDeErro(){}
+
+  - retorno será a mensagem
+    return mensagem;
+
+  - criar variável que recebe "mensagem" com string vazia
+    let mensagem = '';
+
+  - pegar mensagem do objeto "mensagem de erro"
+  - retornar depois desta função
+  - função será chamada após alterar valor do input 
+    innerHTML= mostraMensagemDeErro();
+    
+  - identificar tipo de input
+    - nome / email / senha
+  - passar essa valor para função
+    (tipoDeInput, input);
+
+  Sintaxe completa da função para exibir mensagem de erro
+
+    function mostraMensagemDeErro(tipoDeinput, input){
+      let mensagem = '';
+      return mensagem;
+    }
+
+
+Criar objeto para identificar tipo de erro do input
+
+  - facilitará verificação para identificar valor "true"
+  - irá conter todos os erros previstos para os campos
+    valueMissing / typeMismatch / patternMismatch / customError
+
+  - no arquivo "validacao.js"
+  - acima do objeto "mensagemDeErro"
+
+  - criar constante que recebe um vetor de string (array)
+    const tiposDeErro = [];
+
+  - vetor armazena lista com os tipos de erros previstos
+    ['valueMissing', 'typeMismatch', 'patternMismatch', 'customError'];
+
+  - poderá acrescentar novos tipos se precisar
+
+  Sintaxe completa do objeto tipo de erro
+
+    const tiposDeErro = [
+      'valueMissing',
+      'typeMismatch',
+      'patternMismatch',
+      'customError'
+    ]
+
+Criar laço de repetição para verificar se tem erro e qual o tipo de erro
+  - dentro da função "mostraMensagtemDeErro"
+    - criar laço que recebe como parâmetro uma função anônima 
+    tiposDeErro.forEach(erro =>{})
+
+    - dentro da função anônima
+      - criar a estrutura de verificação
+      - se "validity" do input tem erro
+        - se não estiver preenchido (true)
+          - retorna array da mensagem de erro com as camadas
+            - tipo de input
+            - tipo de erro
+        - se estiver preenchido (false)
+          - não retorna nada
+          - não precisa declarar
+
+  Sintaxe do laço de repetição
+
+    tiposDeErro.forEach(erro => {
+      if(input.validity[erro]) {
+        mensagem = mensagensDeErro[tipoDeinput][erro]
+      }
+
+Colocar seletor JS em todos os tipo de inputs do projeto
+
+  - apenas o elemento data de nascimento possui seletor
+    data-tipo="dataNascimento"
+
+  - no documento HTML
+    - declarar data-attributes nos outros elementos do formulário
+    - com valor identificando cada elemento
+  
+  - campo "nome"
+    data-tipo="nome"
+  
+  - campo "email"
+    data-tipo="email"
+  
+  - campo "nome"
+    data-tipo="senha"
+
+Verificar no navegador
+  - recarregar a página
+  - testar as mensagens de erro dos campos configurados
+    - exibe corretamente em "nome", "email" e "senha"
+    
+  - no campo "data de nascimento"
+    - as duas condiões são verdadeiras
+    - o último item da lista sobreescreve o primeiro
+      - exibe apenas mensagem "maior de idade" (customError)
+      - não exibe mensgem de campo vazio (valueMissing)
+    - [obs.: não exibe a mensagem de campo vazio, pois o campo está pré-preenchido, simulando o formata da data]

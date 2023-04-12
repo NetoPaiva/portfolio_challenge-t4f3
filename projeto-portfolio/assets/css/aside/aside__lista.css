@@ -1,6 +1,6 @@
 /*
   a configuração CSS dos componentes do "aside"
-  serão exportadas para o arquivo "aside.css"
+  serão exportadas para o arquivo "assets/css/aside/aside.css"
  */
 
 /* mobile */
@@ -46,10 +46,6 @@
 
   .aside__lista__item::after{
     margin-right: 2rem;
- 
-    /* não está alterando o tamanho da imagem */
-    /* height: 1.5rem; */
-    /* width: 1.5rem;  */
   }
   
 }

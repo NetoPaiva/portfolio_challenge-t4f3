@@ -1,0 +1,48 @@
+/*
+  a configuração CSS dos componentes do "formulário"
+  serão exportadas para o arquivo "assets/css/formulario/formulario.css"
+ */
+
+/* mobile */
+
+.input__mensagem{
+  height: 8.3125rem;
+
+  padding-top: 1.15rem;
+}
+
+.input__mensagem:focus{
+  padding-top: 1.5rem;
+}
+
+
+.input__mensagem:valid{
+  padding-top: 1.5rem;
+}
+
+.input__mensagem:invalid{
+  /* color: var(--cinza50); */
+  padding-top: 1.5rem;
+}
+
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+}
+
+
+/* --- fim ;) */

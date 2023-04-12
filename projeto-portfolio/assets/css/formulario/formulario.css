@@ -1,0 +1,24 @@
+/* 
+  este arquivo reune todos os componentes do elemento "formulário",
+  que foram definidos em arquivos CSS específicos
+  e orgnizados na pasta "assets/css/formulario",
+  facilitando a importação dos estilos no documento HTML.
+*/
+
+
+@import url(./formulario__container.css);
+@import url(./formulario__fieldset.css);
+
+@import url(./input__container.css);
+@import url(./input__campo.css);
+@import url(./input__mensagem.css);
+@import url(./input__label.css);
+@import url(./input__erro.css);
+@import url(.);
+
+@import url(./input__container--invalido.css);
+@import url(.);
+@import url(.);
+
+
+/* --- fim ;) */

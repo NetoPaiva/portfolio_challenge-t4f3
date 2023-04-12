@@ -1,0 +1,56 @@
+/*
+  a configuração CSS dos componentes do "formulário"
+  serão exportadas para o arquivo "assets/css/formulario/formulario.css"
+ */
+
+/* mobile */
+
+
+/* mensagem de erro */
+.input__container--invalido { 
+  margin-bottom: 0.5rem; /* reduz margem inferior da div */
+}
+
+/* exibe borda da div apenas se inválido */
+/* apenas no campo de input (desconsidera o span) */
+.input__container--invalido .input__campo {
+  /* border: 1px solid var(--cinza30); */
+  border-bottom: 3px solid var(--erro);
+  border-radius: 7px;
+}
+
+/* define cor do seletor */
+.input__container--invalido .input__label{
+  color: var(--erro);
+}
+
+/*  */
+.input__container--invalido .input__erro{
+  display: flex;
+  color: var(--erro);
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+}
+
+
+/* --- fim ;) */

@@ -28,16 +28,16 @@
    <link rel="stylesheet" href="assets/css/basic/botao.css">
 
    <!-- CSS seções -->
-   <link rel="stylesheet" href="assets/css/header-nav.css">
-   <link rel="stylesheet" href="assets/css/aside.css">
-   <link rel="stylesheet" href="assets/css/sobre.css">
-   <link rel="stylesheet" href="assets/css/skills.css">
-   <link rel="stylesheet" href="assets/css/hobbies.css">
-   <link rel="stylesheet" href="assets/css/formacao.css">
-   <link rel="stylesheet" href="assets/css/projetos.css">
-   <link rel="stylesheet" href="assets/css/contato.css">
-   <link rel="stylesheet" href="assets/css/formulario.css">
-   <link rel="stylesheet" href="assets/css/footer.css">
+   <link rel="stylesheet" href="assets/css/nav/nav.css">
+   <link rel="stylesheet" href="assets/css/aside/aside.css">
+   <link rel="stylesheet" href="assets/css/sobre/sobre.css">
+   <link rel="stylesheet" href="assets/css/skills/skills.css">
+   <link rel="stylesheet" href="assets/css/hobbies/hobbies.css">
+   <link rel="stylesheet" href="assets/css/formacao/formacao.css">
+   <link rel="stylesheet" href="assets/css/projetos/projetos.css">
+   <link rel="stylesheet" href="assets/css/contato/contato.css">
+   <link rel="stylesheet" href="assets/css/formulario/formulario.css">
+   <link rel="stylesheet" href="assets/css/footer/footer.css">
 
 </head>
 
@@ -46,15 +46,15 @@
    <!-- <h1>Hello, World!!</h1> -->
 
    <header>
-      <nav class="nav__container">
+      <nav class="nav__container" id="nav">
          <h2 class="nav__logo">Neto Paiva</h2>
          <ul class="nav__lista">
-            <l1 class="nav__item"><a href="#sobre" class="nav__item__link">Sobre mim</a></l1>
-            <l1 class="nav__item"><a href="#skills" class="nav__item__link">Skills</a></l1>
-            <l1 class="nav__item"><a href="#hobbies" class="nav__item__link">Hobbies</a></l1>
-            <l1 class="nav__item"><a href="#formacao" class="nav__item__link">Formação</a></l1>
-            <l1 class="nav__item"><a href="#projetos" class="nav__item__link">Projetos</a></l1>
-            <l1 class="nav__item--single"><a href="#contato" class="nav__item__link">netopaiva@yahoo.com</a></l1>
+            <l1 class="nav__item"><a href="#sobre" class="nav__item__link" title="Clique para acessar seção Sobre mim">Sobre mim</a></l1>
+            <l1 class="nav__item"><a href="#skills" class="nav__item__link" title="Clique para acessar seção Skills">Skills</a></l1>
+            <l1 class="nav__item"><a href="#hobbies" class="nav__item__link" title="Clique para acessar seção Hobbies">Hobbies</a></l1>
+            <l1 class="nav__item"><a href="#formacao" class="nav__item__link" title="Clique para acessar seção Formação">Formação</a></l1>
+            <l1 class="nav__item"><a href="#projetos" class="nav__item__link" title="Clique para acessar seção Projetos">Projetos</a></l1>
+            <l1 class="nav__item--single"><a href="#contato" class="nav__item__link" title="Clique para acessar seção Contato">netopaiva@yahoo.com</a></l1>
          </ul>
       </nav>
    </header>
@@ -63,8 +63,7 @@
       <img src="assets/imagens/netopaiva_foto.jpg" alt="Foto Neto Paiva" class="aside__foto">
       <div class="aside__descricao">
          <h1 class="aside__titulo">Olá, menu nome é Neto Paiva e construo páginas web</h1>
-         <h2 class="asisde__subtitulo">Sou formado em desing e estou me especializando em desenvolvimento front-end no
-            projeto Oracle ONE na Alura.</h2>
+         <h2 class="asisde__subtitulo">Sou formado em desing e estou me especializando em desenvolvimento front-end no projeto Oracle ONE na Alura.</h2>
          <ul class="aside__lista">
             <li class="aside__lista__item"><a class="aside__lista__link" href="https://github.com/NetoPaiva"
                   target="_blank">Github</a></li>
@@ -79,8 +78,10 @@
    </aside>
 
    <main>
-      <section class="sobre__container">
-         <h2 class="sobre__titulo">Sobre mim</h2>
+      <section class="sobre__container" id="sobre">
+         <h2 class="sobre__titulo">
+            <a href="#nav" title="Clique aqui para voltar ao topo da página">Sobre mim</a>
+         </h2>
          <p class="sobre__texto">Tenho 56 anos, designer de formação, com longa experiência em design gráfico.</p>
          <p class="sobre__texto">Fui diretor de arte em agências de propaganda e editoras. Também dei aulas de editoração eletrônica (pacote Adobe) em escolas de arte e design em São Paulo.</p>
          <p class="sobre__texto">Hoje busco novos desafios e oportunidades. Tenho muito interesse na área de programação por ter semelhanças com design na solução de problemas.</p>
@@ -89,8 +90,10 @@
          <img class="sobre__imagem" src="./assets/imagens/netopaiva_sign.svg" alt="Assinatura Neto">
       </section>
 
-      <section class="skills__container">
-         <h2 class="skills__titulo">Skills</h2>
+      <section class="skills__container" id="skills">
+         <h2 class="skills__titulo">
+            <a href="#nav" title="Clique aqui para voltar ao topo da página">Skills</a>
+         </h2>
          <ul class="skills__lista">
             <li class="skills__item">
                <img src="./assets/imagens/icones/icone_html.svg" alt="ícone Html5" class="skills__icone">
@@ -132,8 +135,10 @@
          </ul>
       </section>
 
-      <section class="hobbies__container">
-         <h2 class="hobbies__titulo">Hobbies</h2>
+      <section class="hobbies__container" id="hobbies">
+         <h2 class="hobbies__titulo">
+            <a href="#nav" title="Clique aqui para voltar ao topo da página">Hobbies</a>
+         </h2>
             <ul class="hobbies__lista">
                <li class="hobbies__item">
                   <img src="./assets/imagens/icones/icone_caminhar.svg" alt="ícone caminhar" class="hobbies__icone">
@@ -163,8 +168,10 @@
          
       </section>
 
-      <section class="formacao__container">
-         <h2 class="formacao__titulo">Formação acadêmica</h2>
+      <section class="formacao__container" id="formacao">
+         <h2 class="formacao__titulo">
+            <a href="#nav" title="Clique aqui para voltar ao topo da página">Formação acadêmica</a>
+         </h2>
          <ul class="formacao__lista">
             <li class="formacao__item">
                <div class="formacao__logo__container">
@@ -211,113 +218,168 @@
          </ul>
       </section>
 
-      <section class="projetos__container">
-         <h2 class="projetos__titulo">Experiência profissional</h2>
+      <section class="projetos__container" id="projetos">
+         <h2 class="projetos__titulo">
+            <a href="#nav" title="Clique aqui para voltar ao topo da página">Experiência profissional</a>
+         </h2>
          <ul class="projetos__lista">
             <li class="projetos__item">
-               <img class="projetos__tela" src="./assets/imagens/tela_apeperia.png" alt="captura de tela Apeperia">
+               <img class="projetos__tela" src="./assets/imagens/tela_apeperia.png" alt="captura de tela Apeperia" title="Tela do projeto Apeperia">
                <div class="projetos__textos__container">
                   <h3 class="projetos__nome">Apeperia</h3>
                   <p class="projetos__texto">Curso Alura - Responsivo</p>
                   <div class="botao__container">
-                     <a class="botao__secundario" href="#" target="_blank" rel="noopener noreferrer">Repositório</a>
-                     <a class="botao__primario" href="#" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                     <a class="botao__secundario" href="https://github.com/NetoPaiva/apeperia" target="_blank" rel="noopener noreferrer" title="Clique para visualiar Repositório Apeperia">Repositório</a>
+                     <a class="botao__primario" href="https://netopaiva.github.io/apeperia" target="_blank" rel="noopener noreferrer" title="Clique para acessar página Apeperia">Ver demo</a>
                   </div>
                </div>
             </li>
             <li class="projetos__item single">
-               <img class="projetos__tela" src="./assets/imagens/tela_alurinha.png" alt="captura de tela Alurinha">
+               <img class="projetos__tela right" src="./assets/imagens/tela_alurinha.png" alt="captura de tela Alurinha" title="Tela do projeto Alurinha">
                <div class="projetos__textos__container">
                   <h3 class="projetos__nome">Alurinha</h3>
                   <p class="projetos__texto">Curso Alura - Flexbox</p>
                   <div class="botao__container">
-                     <a class="botao__secundario" href="#" target="_blank" rel="noopener noreferrer">Repositório</a>
-                     <a class="botao__primario" href="#" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                     <a class="botao__secundario" href="https://github.com/NetoPaiva/alurinha" target="_blank" rel="noopener noreferrer" title="Clique para visualiar Repositório Alurinha">Repositório</a>
+                     <a class="botao__primario" href="https://netopaiva.github.io/alurinha" target="_blank" rel="noopener noreferrer" title="Clique para acessar página Alurinha">Ver demo</a>
                   </div>
                </div>
             </li>
             <li class="projetos__item">
-               <img class="projetos__tela" src="./assets/imagens/tela_frutaria.png" alt="captura de tela Frutaria">
+               <img class="projetos__tela" src="./assets/imagens/tela_frutaria.png" alt="captura de tela Frutaria" title="Tela do projeto Frutaria">
                <div class="projetos__textos__container">
                   <h3 class="projetos__nome">Fruta & Fruto</h3>
                   <p class="projetos__texto">Curso Alura - Arquitetura CSS</p>
                   <div class="botao__container">
-                     <a class="botao__secundario" href="#" target="_blank" rel="noopener noreferrer">Repositório</a>
-                     <a class="botao__primario" href="#" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                     <a class="botao__secundario" href="https://github.com/NetoPaiva/fruta-e-fruto" target="_blank" rel="noopener noreferrer" title="Clique para visualiar Repositório Frutaria">Repositório</a>
+                     <a class="botao__primario" href="https://netopaiva.github.io/fruta-e-fruto" target="_blank" rel="noopener noreferrer" title="Clique para acessar página Frutaria">Ver demo</a>
                   </div>
                </div>
             </li>
             <li class="projetos__item single">
-               <img class="projetos__tela" src="./assets/imagens/tela_portfolio.png" alt="captura de tela Portfolio">
+               <img class="projetos__tela right" src="./assets/imagens/tela_portfolio.png" alt="captura de tela Portfolio" title="Tela do projeto Portfolio">
                <div class="projetos__textos__container">
                   <h3 class="projetos__nome">Portfolio</h3>
                   <p class="projetos__texto">Challenge Alura Portfolio</p>
                   <div class="botao__container">
-                     <a class="botao__secundario" href="#" target="_blank" rel="noopener noreferrer">Repositório</a>
-                     <a class="botao__primario" href="#" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                     <a class="botao__secundario" href="https://github.com/NetoPaiva/challenge-portfolio.git" target="_blank" rel="noopener noreferrer" title="Clique para visualiar Repositório Portfolio">Repositório</a>
+                     <a class="botao__primario" href="https://netopaiva.github.io/challenge-portfolio/" target="_blank" rel="noopener noreferrer" title="Clique para acessar página Portfolio">Ver demo</a>
                   </div>
                </div>
             </li>
             <li class="projetos__item">
-               <img class="projetos__tela" src="./assets/imagens/tela_decodificador.png" alt="captura de tela Decodificador">
+               <img class="projetos__tela" src="./assets/imagens/tela_decodificador.png" alt="captura de tela Decodificador" title="Tela do projeto Decodificador">
                <div class="projetos__textos__container">
                   <h3 class="projetos__nome">Decodificador</h3>
                   <p class="projetos__texto">Challenge Alura - Decodificador</p>
                   <div class="botao__container">
-                     <a class="botao__secundario" href="#" target="_blank" rel="noopener noreferrer">Repositório</a>
-                     <a class="botao__primario" href="#" target="_blank" rel="noopener noreferrer">Ver demo</a>
+                     <a class="botao__secundario" href="https://github.com/NetoPaiva/t4_one_challenge.git" target="_blank" rel="noopener noreferrer" title="Clique para visualiar Repositório Decodificador">Repositório</a>
+                     <a class="botao__primario" href="https://netopaiva.github.io/t4_one_challenge/" target="_blank" rel="noopener noreferrer" title="Clique para acessar página Decodificador">Ver demo</a>
                   </div>
                </div>
             </li>
          </ul>
       </section>
 
-      <section class="contato__container">
-         <img class="contato__imagem" src="./assets/imagens/contato_imagem.png" alt="Foto de um telefone antigo" >
+      <section class="contato__container" id="contato">
+
+         <div class="contato__imagem" alt="imagem ilustrativa da área de contato, detalhe do teclado do computador"></div>
+         
          <div class="contato__container--interno">
-            <h2 class="contato__titulo">Contato</h2>
-            <p class="contato__texto">Quer entrar em contato comigo? Preencha o formulário abaixo e entrarei em contato o mais
-               rápido possível</p>
+         
+            <div class="contato__container--textos">
+               <h2 class="contato__titulo">
+                  <a href="#nav" title="Clique aqui para voltar ao topo da página">Contato</a>
+               </h2>
+               <p class="contato__texto">Quer entrar em contato comigo? Preencha e envie o formulário abaixo que retornarei o mais breve possível.</p>
+            </div>
+         
+            <form action="https://formsubmit.co/ec468dc719ceb3c8a9d3e7c9c3ebd605" method="post" class="formulario__container">
+         
+               <fieldset class="formulario__fieldset">
+
+                  <!-- campos da plataforma de envio do formulário -->
+                  <input type="hidden" name="_next" value="https://netopaiva.github.io/challenge-portfolio/agradecimento.html">
+                  
+                  <input type="hidden" name="_autoresponse" value="Olá! Agradeço por entrar em contato ao visitar meu portfolio. Esta é uma cópia da mensagem que me enviou. Em breve responderei. Abs e bons projetos!! - Neto Paiva"> <!-- final dos campos da plataforma de envio -->
+
+                  <!-- início dos campos visíveis do formulário -->
+
+                  <div class="input__container"> <!-- campo nome -->
+         
+                     <input class="input__campo input__nome" data-form="nome" name="nome" type="text" placeholder="Nome" title="Digite seu nome" minlength="5" required>
+         
+                     <label class="input__label" data-label="nome" for="Nome">
+                        Nome
+                     </label>
+         
+                     <span class="input__erro" data-span="nome">
+                        Favor preencher com seu nome completo.
+                     </span>
+         
+                  </div> <!-- fecha campo nome -->
+         
+                  <div class="input__container"> <!-- campo email -->
+      
+                     <input class="input__campo input__email" data-form="email" name="email" type="email" placeholder="E-mail" title="Digite seu e-mail" required>
+      
+                     <label class="input__label" data-label="email" for="E-mail">
+                        E-mail
+                     </label>
+      
+                     <span class="input__erro" data-span="email">
+                        Favor preencher com seu email válido.
+                     </span>
+      
+                  </div> <!-- fecha campo email -->
+
+                  <div class="input__container"> <!-- campo assunto -->
+
+                     <input class="input__campo input__assunto" data-form="assunto" name="assunto" type="text" minlength="10" placeholder="Assunto" title="Digite o assunto da mensagem" required>
+
+                     <label class="input__label" data-label="assunto" for="Assunto">
+                        Assunto
+                     </label>
+
+                     <span class="input__erro" data-span="assunto">
+                        Favor descrever qual o assunto.
+                     </span>
+
+                  </div> <!-- fecha campo assunto -->
+         
+                  <div class="input__container"> <!-- campo mensagem -->
+
+                     <textarea class="input__campo input__mensagem" data-form="mensagem" name="mensagem" minlength="50"
+                        maxlength="300" cols="" rows="" placeholder="Mensagem" title="Digite sua mensagem, máximo de 300 caracteres." required></textarea>
+      
+                     <label class="input__label" data-label="mensagem" for="Mensagem">
+                        Mensagem
+                     </label>
+      
+                     <span class="input__erro" data-span="mensagem">
+                        Favor escrever sua mensagem com mínimo de 50 caracteres e máximo de 300.
+                     </span>
+
+                  </div> <!-- fecha campo mensagem -->
+         
+               </fieldset>
+         
+               <button class="formulario__botao botao__primario" data-btn="botao" title="Clique para enviar a mensagem">Enviar mensagem</button>
+
+            </form>
+         
          </div>
-         <form action="" class="formulario__container">
-            <fildeset class="formulario__fildset">
-               <div class="input__container">
-                  <input class="input__campo input__nome" name="nome" type="text" placeholder="Nome"
-                     title="Digite aqui seu nome" data-form="nome" required>
-                  <label class="input__label" for="Nome">Nome</label>  
-                  <span class="input__span"></span>
-               </div>
-               <div class="input__container">
-                  <input class="input__campo input__email" name="email" type="text" placeholder="E-mail"
-                     title="Digite aqui seu e-mail" data-form="email" required>
-                  <span class="input__span"></span>
-               </div>
-               <div class="input__container">
-                  <input class="input__campo input__assunto" name="assunto" type="text" placeholder="Assunto"
-                     title="Digite aqui o assunto da mensagem" data-form="assunto" required>
-                  <span class="input__span"></span>
-               </div>
-               <div class="input__container">
-                  <textarea class="input__campo input__mensagem" name="mensagem" cols="" rows="" placeholder="Mensagem"
-                     title="Digite aqui sua mensagem" data-form="mensagem" required></textarea>
-                  <span class="input__span"></span>
-               </div>
-            </fildeset>
-            <button class="formulario__botao botao__primario" title="Clique para enviar a mensagem">Enviar mensagem</button>
-         </form>
+         
       </section>
 
    </main>
-
-
-
 
    <footer class="footer__container">
       <h3 class="footer__autor">Desenvolvido por Neto Paiva</h3>
       <time class="footer__date" pubdate>2023-03-26</time>
    </footer>
 
-   <script src=""></script>
+   <script src="./assets/js/validar.js" type="module"></script>
 
 </body>
 

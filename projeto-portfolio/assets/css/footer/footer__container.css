@@ -1,0 +1,42 @@
+/*
+  a configuração CSS dos componentes do "footer"
+  serão exportadas para o arquivo "assets/css/footer/footer.css"
+ */
+
+/* mobile */
+
+.footer__container{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+}
+
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  
+
+}
+
+
+/* --- fim ;) */

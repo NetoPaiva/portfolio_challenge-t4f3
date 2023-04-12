@@ -1,6 +1,6 @@
 /*
   a configuração CSS dos componentes do "formulário"
-  serão exportadas para o arquivo "formulario.css"
+  serão exportadas para o arquivo "assets/css/formulario/formulario.css"
  */
 
 /* mobile */
@@ -9,23 +9,19 @@
   font-weight: 400;
   color: var(--cinza50);
 
-  position: relative;
-  top: -1.95rem;
+  position: absolute;
   left: 0.75rem;
-  margin: 0;
-  padding: 0;
-  
+  top: 1.15rem;
 
+  margin-bottom: 4px;
+  
   transition: all .25s;
-  
-  
 }
+
 
 /* tablete */
 
 @media screen and (min-width:768px){
-
-
 
 }
 
@@ -33,15 +29,11 @@
 
 @media screen and (min-width:1024px) {
 
-
-
 }
 
 /* desktop */
 
 @media screen and (min-width:1440px) {
-
-  
 
 }
 

@@ -1,0 +1,19 @@
+/* 
+  este arquivo reune todos os componentes do elemento "projetos",
+  que foram definidos em arquivos CSS específicos
+  e orgnizados na pasta "assets/css/projetos",
+  facilitando a importação dos estilos no documento HTML.
+*/
+
+@import url(./projetos__container.css);
+@import url(./projetos__titulo.css);
+@import url(./projetos__lista.css);
+@import url(./projetos__item.css);
+@import url(./projetos__tela.css);
+@import url(./projetos__textos__container.css);
+@import url(./projetos__nome.css);
+@import url(./projetos__texto.css);
+
+
+
+/* --- fim ;) */

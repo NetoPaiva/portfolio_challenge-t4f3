@@ -1,23 +1,26 @@
 /*
   a configuração CSS dos componentes do "formulário"
-  serão exportadas para o arquivo "formulario.css"
+  serão exportadas para o arquivo "assets/css/formulario/formulario.css"
  */
 
 /* mobile */
 
-.formulario__fildset{
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: flex-start; */
-  /* gap: 2rem; */
-  /* margin-bottom: 2rem; */
+.formulario__fieldset{
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  
+  gap: 2rem;
+  
+  margin: 0;
+  margin-bottom: 2rem;
+  padding: 0;
 }
 
 /* tablete */
 
 @media screen and (min-width:768px){
-
-
 
 }
 
@@ -25,15 +28,11 @@
 
 @media screen and (min-width:1024px) {
 
-
-
 }
 
 /* desktop */
 
 @media screen and (min-width:1440px) {
-
-  
 
 }
 

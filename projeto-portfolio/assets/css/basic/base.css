@@ -5,6 +5,8 @@
     - títulos
     - listas
     - links (tag "a")
+    - input
+    - textarea
 */
 
 
@@ -25,6 +27,7 @@
   --cinza30: #C8C8C8;
   --cinza50: #A2A2A2;
   --cinza100: #464646;
+  --erro: #4b6994;
   --fundo: #F5F5F5;
 
   --raleway: 'Raleway', sans-serif;
@@ -79,10 +82,17 @@ a:hover{
   text-decoration: underline;
 }
 
-input,
-textarea {
+input, textarea {
   margin: 0;
+  padding: 0;
   width: auto;
+}
+
+
+button{
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 

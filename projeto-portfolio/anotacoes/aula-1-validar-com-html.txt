@@ -1,0 +1,40 @@
+# Cópia das anotações da aula "validar com html"
+
+Anotações do curso
+
+# JS - Validar Formulário
+
+## Atributos HTML de validação
+
+Validar formulário
+  - garantir que os campos estejam preenchidos
+  - exibir mensagem de preenchimento obrigatório
+  - visualizar que campo precisa ser preenchido
+  - evitar envio sem preenchimento
+
+Ferramentas HTML de validação
+  - incluir atributos nas tags de input do HTML
+
+  Atributo "required"
+  - determina que o preenchimento é obrigatório
+  - declara apenas o atributo "required" sem declarar valor
+    <input name="nome" id="nome" class="input" type="text" placeholder="Nome" required>
+
+  Atributo "type"
+  - determina o tipo de estrutura do conteúdo do input
+    - text
+    - email
+    - password
+    - date
+
+  Atributo "minlength"
+  - determina quantidade mínima de caracteres
+  - não verifica caracteres válidos
+    minlength="6"
+
+  Atributo "title"
+  - exibe mensagem ao passar o mouse por cima do input
+  - o valor do atributo é a mensagem a ser exibida
+    title="É obrigatório o preenchimento deste campo."
+    title="Digite aqui seu nome."
+

@@ -1,0 +1,18 @@
+/* 
+  este arquivo reune todos os componentes do elemento "formacao",
+  que foram definidos em arquivos CSS específicos
+  e orgnizados na pasta "assets/css/formacao",
+  facilitando a importação dos estilos no documento HTML.
+*/
+
+@import url(./formacao__container.css);
+@import url(./formacao__titulo.css);
+@import url(./formacao__lista.css);
+@import url(./formacao__item.css);
+@import url(./formacao__logo__container.css);
+@import url(./formacao__logo.css);
+@import url(./formacao__nome.css);
+@import url(./formacao__texto.css);
+
+
+/* --- fim ;) */
