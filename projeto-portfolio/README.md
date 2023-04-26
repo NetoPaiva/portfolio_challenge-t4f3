@@ -16,65 +16,29 @@ link da publicação do Portfolio: [https://netopaiva.github.io/challenge-portfo
     - Instrutores:
     
         - Ellen Prado Pimentel
-            - dev / instrutora Front-end (Alura)
-            - https://www.linkedin.com/in/ellen-p-pimentel/
-      
         - Wesley Bastos
-            - dev / instrutor Front-end (Alura)
-            - https://www.linkedin.com/in/wessbastos/
-            - https://www.instagram.com/wessbastos/
 
 -----
 
 
-### Sobre o desafio Portfolio
+### Sobre o desafio Portfolio: do Figma ao HTML e CSS com JS
 
-Com base no Challenge Based Learning (Apple)
-
-- 3 pilares da aprendizagem baseada em desafios
-    - Engajar (Trello/Discord)
-        - rotina de desenvolvimento
-        - comunicação
-    
-    - Investigar (cursos/pesquisas)
-        - material de estudos
-        - busca de soluções
-        - guia de conteúdo
-    
-    - Agir (GitHub/LinkedIn)
-        - desenvolver
-        - monitorar
-        - compartilhar
-
-
-#### Etapa Sprint 1 - Portfolio: do Figma ao HTML e CSS com JS
-
-  - Vídeo de apresentação
-  - Comunidade no Discord
-  - Quadro no Trello
-  - Modelo no Figma
-  - Projeto base no GitHub
+  - Criar portfolio de projetos Front-end
+  - Reproduzir com fidelidade layout apresentado
+  - Construir estrutura HTML
+  - Configurar estilos CSS
+  - Desenvolver funcionalidades JS
+  - Validar formulário com HTML e JS
   
-  - Ferramentas de desenvolvimento
+  - Conceitos de desenvolvimento
     - HTML semântico / acessível
     - CSS flex / responsivo
     - JS validação formulário
 
-
-#### Entrega do projeto
-
-  - Publicar repositório
-    "#challengeoneportfolio4"
-  - Publicar página no GitHub
-  - Preencher formulário de entrega
-  - Compartilhar projeto
-      "#Oracle #AluraLatam"
-
-
 ------
 
 
-### Links
+### Links do projeto
 
 
   - [Página do Challenge](https://www.alura.com.br/challenges/oracle-one-front-end/portfolio)
@@ -83,10 +47,20 @@ Com base no Challenge Based Learning (Apple)
 
   - [Layout Figma](https://www.figma.com/file/Mv4mSxBHzB5caI7bW2tLv6/Challenge-Front-end-Portf%C3%B3lio)
 
-  - [Repositório do projeto Portfolio](https://github.com/NetoPaiva/portfolio_challenge-t4f3.git)
+  - [Repositório do desenvolvimento do projeto Challenge Portfolio](https://github.com/NetoPaiva/portfolio_challenge-t4f3)
 
-  - [LinkedIn Alura](https://www.linkedin.com/company/alura-latam/mycompany/)
+  - [Repositório do projeto Portfolio publicado](https://github.com/NetoPaiva/challenge-portfolio)
+
+  - [Publicação do Portfolio finalizado](https://netopaiva.github.io/challenge-portfolio/)
 
 ----
+
+## Celebrar
+
+[![Beethoven: Symphony No. 9 In D Minor, Op. 125 - "Choral" - 3. Adagio molto e cantabile](https://img.youtube.com/vi/Iqu_51trOVI/0.jpg)](https://youtu.be/Iqu_51trOVI)
+
+Aperte o play: [Beethoven: Symphony No. 9 In D Minor, Op. 125 - "Choral" - 3. Adagio molto e cantabile](https://youtu.be/Iqu_51trOVI)
+
+
 
 /* --- fim ;)
